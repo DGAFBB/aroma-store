@@ -1,13 +1,14 @@
 import React from 'react';
 import {makeAutoObservable} from "mobx";
+import {createAroma} from "../http/productAPI";
 
 export default class ProductStore {
     constructor() {
         this._types = []
-        this._brands = []
+        this._aromas = []
         this._products = []
         this._selectedType = {}
-        this._selectedBrand = {}
+        this._selectedAroma = {}
         this._page = 1
         this._totalCount = 0
         this._limit = 3
@@ -17,8 +18,8 @@ export default class ProductStore {
     setTypes(types) {
         this._types = types
     }
-    setBrands(brands) {
-        this._brands = brands
+    setAromas(aromas) {
+        this._aromas = aromas
     }
     setProducts(products) {
         this._products = products
@@ -28,9 +29,9 @@ export default class ProductStore {
         this.setPage(1)
         this._selectedType = type
     }
-    setSelectedBrand(brand) {
+    setSelectedAroma(aroma) {
         this.setPage(1)
-        this._selectedBrand = brand
+        this._selectedAroma = aroma
     }
     setPage(page) {
         this._page = page
@@ -42,8 +43,8 @@ export default class ProductStore {
     get types() {
         return this._types
     }
-    get brands() {
-        return this._brands
+    get aromas() {
+        return this._aromas
     }
     get products() {
         return this._products
@@ -51,8 +52,8 @@ export default class ProductStore {
     get selectedType() {
         return this._selectedType
     }
-    get selectedBrand() {
-        return this._selectedBrand
+    get selectedAroma() {
+        return this._selectedAroma
     }
     get totalCount() {
         return this._totalCount

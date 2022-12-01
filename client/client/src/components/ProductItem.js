@@ -5,7 +5,7 @@ import heart from '../assets/heart.png';
 import {useHistory} from "react-router-dom";
 import {PRODUCT_ROUTE} from '../utils/consts';
 
-const ProductItem = ({device}) => {
+const ProductItem = ({product}) => {
     const history = useHistory()
     return (
         <Col md={3} className={"mt-3"} onClick={() => history.push(PRODUCT_ROUTE + '/' + product.id)}>
