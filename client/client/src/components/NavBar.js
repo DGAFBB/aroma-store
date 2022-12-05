@@ -3,7 +3,7 @@ import {Context} from "../index";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {NavLink} from "react-router-dom";
-import {ADMIN_ROUTE, LOGIN_ROUTE, MAIN_ROUTE} from "../utils/consts";
+import {ADMIN_ROUTE, CATALOG_ROUTE, LOGIN_ROUTE, MAIN_ROUTE} from "../utils/consts";
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
@@ -18,9 +18,9 @@ const NavBar = observer(() => {
     }
 
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="#EDE6E1">
             <Container>
-                <NavLink style={{color:'white'}} to={MAIN_ROUTE}>gvycg</NavLink>
+                <NavLink style={{color:'#EDE6E1'}} to={CATALOG_ROUTE}>Каталог</NavLink>
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button
