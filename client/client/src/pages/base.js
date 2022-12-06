@@ -15,6 +15,7 @@ const Base = observer(() => {
 
     return (
         <Container>
+
             <Row className="mt-2">
                 <Col md={3}>
                     <TypeBar/>
