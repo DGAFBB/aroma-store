@@ -4,29 +4,5 @@
     max-width: 100%;
     padding:  101px  101px;
     justify-content: space-between;
-    filter:alpha(opacity=0);
-}
-
-.button{
-    margin-right: 5px;
-    margin-left: 5px;
-    background: transparent;
-    color: #033783;
-    border-color: #033783;
-    font-family: system-ui;
-}
-.button:hover,
-.button:active{
-    background: #6D9DE4;
-    border-color: #6D9DE4;
-    color: #FEFDEF;
-}
-.button:focus,
-.button:visited{
-    background: #033783;
-    border-color: #033783;
-    color: #FEFDEF;
-    outline: none;
-    box-shadow: none !important;
-    -webkit-appearance: none;
+    background-color: #EDE6E1;
 }

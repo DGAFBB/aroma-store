@@ -38,20 +38,20 @@ const NavBar = observer(() => {
                 <NavLink style={{color:'#370601'}} to={CONTACTS_ROUTE} className="navbar-light navbar-brand">Контакты</NavLink>
                 <Navbar.Brand to={BASE_ROUTE}>
                     <img
-                        src="/logo.svg"
+                        src="../assets/logo.svg"
                         className="d-inline-block align-top log"
                         alt="React Bootstrap logo"
                     />
                 </Navbar.Brand>
                 <NavLink style={{color:'#370601'}} to={FAVOR_ROUTE} className="navbar-light navbar-brand">Избранное</NavLink>
-                <NavLink style={{color:'#370601'}} to={BASKET_ROUTE}className="navbar-light navbar-brand">Корзина</NavLink>
+                <NavLink style={{color:'#370601'}} to={BASKET_ROUTE} className="navbar-light navbar-brand">Корзина</NavLink>
                 {user.isAuth ?
                 <Nav className="ml-auto navbar-light navbar-brand" style={{color: '#370601'}}>
                     <Button
                         variant={"outline-light"}
                         onClick={() => navigate(ADMIN_ROUTE)}
                     >
-                        admin
+                        Администратор
                     </Button>
                     <Button
                         variant={"outline-light"}
