@@ -1,12 +1,12 @@
 import Basket from "./pages/basket";
 import Delivery from "./pages/delivery";
-import Mainpage from "./pages/mainpage";
+import Base from "./pages/base";
 import Product from "./pages/product";
 import Catalog from "./pages/catalog";
 import Auth from "./pages/auth";
 import Admin from "./pages/admin";
 import {
-    MAIN_ROUTE,
+    BASE_ROUTE,
     BASKET_ROUTE,
     DELIVERY_ROUTE,
     PRODUCT_ROUTE,
@@ -14,9 +14,9 @@ import {
     REGISTRATION_ROUTE,
     CATALOG_ROUTE,
     ADMIN_ROUTE,
-    PERSONAL_ACCOUNT_ROUTE, CONTACTS_ROUTE
+    PERSONAL_ACCOUNT_ROUTE, CONTACTS_ROUTE, FAVOR_ROUTE
 } from "./utils/consts";
-import Favorit from "./pages/favorit";
+import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
 import Contacts from "./pages/contacts";
 
@@ -33,8 +33,8 @@ export const authRoutes = [
 
 export const publicRoutes = [
     {
-        path: MAIN_ROUTE,
-        Component: Mainpage
+        path: BASE_ROUTE,
+        Component: Base
     },
     {
         path: BASKET_ROUTE,
@@ -61,8 +61,8 @@ export const publicRoutes = [
         Component: Product
     },
     {
-        path: FAVORIT_ROUTE,
-        Component: Favorit
+        path: FAVOR_ROUTE,
+        Component: Favor
     },
     {
         path: CONTACTS_ROUTE,

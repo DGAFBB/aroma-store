@@ -1,5 +1,4 @@
 import {$authHost, $host} from "./index";
-import jwt_decode from 'jwt-decode';
 
 export const createType = async (type) => {
     const {data} = await $authHost.post('api/type', type)
@@ -11,13 +10,13 @@ export const fetchTypes = async () => {
     return data
 }
 
-export const createVoluem = async (type) => {
-    const {data} = await $authHost.post('api/voluem', voluem)
+export const createVolm = async (volm) => {
+    const {data} = await $authHost.post('api/volm', volm)
     return data
 }
 
-export const fetchTVoluems = async () => {
-    const {data} = await $host.get('api/voluem')
+export const fetchTVolms = async () => {
+    const {data} = await $host.get('api/volm')
     return data
 }
 
