@@ -1,4 +1,5 @@
-import React, {useContext} from 'react';
+import {useContext} from 'react';
+import * as React from 'react';
 import {Navigate, Route, Routes} from 'react-router-dom';
 import {authAdminRoutes, authGuestRoutes, publicRoutes} from "../routes";
 import {Context} from "../index";
@@ -9,7 +10,6 @@ const AppRouter = observer(() => {
 
     console.log(user)
     return (
-        <div style={{ minHeight: '62.5vh' }}>
             <Routes>
                 {user.role === 'admin' &&
                     authAdminRoutes.map(({ path, Component }) => (
@@ -22,9 +22,8 @@ const AppRouter = observer(() => {
                 {publicRoutes.map(({ path, Component }) => {
                     return <Route key={path} path={path} element={Component} />
                 })}
-                <Route path="*" element={<Navigate replace to="/park" />} />
+                <Route path="*" element={<Navigate replace to="/" />} />
             </Routes>
-        </div>
     );
 });
 
