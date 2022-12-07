@@ -10,20 +10,34 @@ import {Context} from "../index";
 import {fetchAromas, fetchProducts, fetchTypes} from "../http/productAPI";
 import Pages from "../components/Pages";
 import NavBar from "../components/NavBar";
+import fir from "../assets/base_img1.png";
+import sec from "../assets/base_img2.png";
+import thd from "../assets/base_img3.png";
 
 const Base = observer(() => {
 
     return (
         <Container>
-
             <Row className="mt-2">
-                <Col md={3}>
-                    <TypeBar/>
-                </Col>
-                <Col md={9}>
-                    <AromaBar/>
-                    <Pages/>
-                </Col>
+                <img
+                    src= {fir}
+                    class="float-left"
+                />
+                <img
+                    src= {sec}
+                    class="mx-auto d-block"
+                />
+                <img
+                    src= {thd}
+                    class="float-right"
+                />
+                {/*<Col md={3}>*/}
+                {/*    <TypeBar/>*/}
+                {/*</Col>*/}
+                {/*<Col md={9}>*/}
+                {/*    <AromaBar/>*/}
+                {/*    <Pages/>*/}
+                {/*</Col>*/}
             </Row>
         </Container>
     );

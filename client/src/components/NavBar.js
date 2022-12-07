@@ -12,7 +12,6 @@ import {
     DELIVERY_ROUTE, FAVOR_ROUTE,
     LOGIN_ROUTE
 } from "../utils/consts";
-import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
 import {useNavigate} from 'react-router-dom';
@@ -20,6 +19,7 @@ import "../styles/NavBar/NavBar.css";
 import "../styles/fonts/fonts.css";
 import "../styles/Image/Logo.css";
 import "../styles/fonts/Brand_name.css";
+import logo from "../assets/logo.svg";
 
 const NavBar = observer(() => {
     const {user} = useContext(Context)
@@ -33,39 +33,38 @@ const NavBar = observer(() => {
     return (
         <Navbar>
             <Container className="navbar">
-                <NavLink style={{color:'#370601'}} to={CATALOG_ROUTE} className="navbar-light navbar-brand">Каталог</NavLink>
-                <NavLink style={{color:'#370601'}} to={DELIVERY_ROUTE} className="navbar-light navbar-brand">Доставка</NavLink>
-                <NavLink style={{color:'#370601'}} to={CONTACTS_ROUTE} className="navbar-light navbar-brand">Контакты</NavLink>
-                <Navbar.Brand to={BASE_ROUTE}>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="navbar-light navbar-brand navbar-mar">Каталог</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(DELIVERY_ROUTE)} className="navbar-light navbar-brand navbar-mar">Доставка</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="navbar-light navbar-brand navbar-mar">Контакты</NavLink>
+
+                <Navbar.Brand onClick={() => navigate(BASE_ROUTE)} className="log">
                     <img
-                        src="../assets/logo.svg"
-                        className="d-inline-block align-top log"
+                        src= {logo}
                         alt="React Bootstrap logo"
                     />
                 </Navbar.Brand>
-                <NavLink style={{color:'#370601'}} to={FAVOR_ROUTE} className="navbar-light navbar-brand">Избранное</NavLink>
-                <NavLink style={{color:'#370601'}} to={BASKET_ROUTE} className="navbar-light navbar-brand">Корзина</NavLink>
-                {user.isAuth ?
-                <Nav className="ml-auto navbar-light navbar-brand" style={{color: '#370601'}}>
-                    <Button
-                        variant={"outline-light"}
+
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(FAVOR_ROUTE)} className="navbar-light navbar-brand navbar-mar">Избранное</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} className="navbar-light navbar-brand navbar-mar">Корзина</NavLink>
+                    {user.isAuth ?
+                        <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
+                            <NavLink
                         onClick={() => navigate(ADMIN_ROUTE)}
-                    >
+                            >
                         Администратор
-                    </Button>
-                    <Button
-                        variant={"outline-light"}
+                            </NavLink>
+                            <NavLink
                         onClick={() => logOut()}
-                        className="ml-2"
-                    >
+                            >
                         Выйти
-                    </Button>
-                </Nav>
-                :
-                <Nav className="ml-auto" style={{color: 'white'}}>
-                    <Button variant={"outline-light"} onClick={() => navigate(LOGIN_ROUTE)}>Войти</Button>
-                </Nav>
-            }
+                            </NavLink>
+                        </Nav>
+                        :
+                        <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
+                            <NavLink style={{color: '#370601'}} onClick={() => navigate(LOGIN_ROUTE)}>Войти</NavLink>
+                        </Nav>
+                        }
+
             </Container>
         </Navbar>
     );

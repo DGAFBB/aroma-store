@@ -20,11 +20,13 @@ import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
 import Contacts from "./pages/contacts";
 
-export const authRoutes = [
+export const authAdminRoutes = [
     {
         path: ADMIN_ROUTE,
         Component: Admin
     },
+]
+export const authGuestRoutes =[
     {
         path: PERSONAL_ACCOUNT_ROUTE,
         Component: Personal_account

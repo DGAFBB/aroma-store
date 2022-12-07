@@ -1,7 +1,4 @@
 .log {
-position: absolute;
-width: 210px;
-height: 145px;
-left: 616px;
-top: 16px;
+    padding-left: 100px;
+    padding-right: 110px;
 }

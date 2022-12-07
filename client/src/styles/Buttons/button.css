@@ -1,0 +1,22 @@
+.brown-button{
+    font-family: 'PT Astra Serif';
+    font-color: #E8E0DA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    background: transparent;
+    color: #5D4037;
+}
+.milk-button{
+    font-family: 'PT Astra Serif';
+    font-color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    background: transparent;
+    color: #E8E0DA;
+}

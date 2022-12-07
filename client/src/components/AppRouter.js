@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import { Route, Routes} from 'react-router-dom';
-import {authRoutes, publicRoutes} from "../routes";
+import {Navigate, Route, Routes} from 'react-router-dom';
+import {authAdminRoutes, authGuestRoutes, publicRoutes} from "../routes";
 import {Context} from "../index";
 import {observer} from "mobx-react-lite";
 
@@ -9,14 +9,22 @@ const AppRouter = observer(() => {
 
     console.log(user)
     return (
-        <Routes>
-            {authRoutes.map(({path, Component}) =>
-                <Route key={path} path={path} component={Component} exact/>
-            )}
-            {publicRoutes.map(({path, Component}) =>
-                <Route key={path} path={path} component={Component} exact/>
-            )}
-        </Routes>
+        <div style={{ minHeight: '62.5vh' }}>
+            <Routes>
+                {user.role === 'admin' &&
+                    authAdminRoutes.map(({ path, Component }) => (
+                        <Route key={path} path={path} element={Component} />
+                    ))}
+                {user.role === 'guest' &&
+                    authGuestRoutes.map(({ path, Component }) => (
+                        <Route key={path} path={path} element={Component} />
+                    ))}
+                {publicRoutes.map(({ path, Component }) => {
+                    return <Route key={path} path={path} element={Component} />
+                })}
+                <Route path="*" element={<Navigate replace to="/park" />} />
+            </Routes>
+        </div>
     );
 });
 
