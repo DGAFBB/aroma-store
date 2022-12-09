@@ -14,7 +14,7 @@ import {
     REGISTRATION_ROUTE,
     CATALOG_ROUTE,
     ADMIN_ROUTE,
-    PERSONAL_ACCOUNT_ROUTE, CONTACTS_ROUTE, FAVOR_ROUTE
+    PERSONAL_ACCOUNT_ROUTE, CONTACTS_ROUTE, FAVOR_ROUTE, GUEST_ROUTE
 } from "./utils/consts";
 import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
@@ -28,7 +28,7 @@ export const authAdminRoutes = [
 ]
 export const authGuestRoutes =[
     {
-        path: PERSONAL_ACCOUNT_ROUTE,
+        path: GUEST_ROUTE + PERSONAL_ACCOUNT_ROUTE,
         Component: Personal_account
     },
 ]

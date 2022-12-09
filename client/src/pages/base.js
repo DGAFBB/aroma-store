@@ -15,21 +15,41 @@ import sec from "../assets/base_img2.png";
 import thd from "../assets/base_img3.png";
 
 const Base = observer(() => {
+    const {product} = useContext(Context)
+
+    useEffect(() => {
+        fetchTypes().then(data => product.setTypes(data))
+        fetchAromas().then(data => product.setAromas(data))
+        fetchProducts(null, null, 1, 2).then(data => {
+            product.setProducts(data.rows)
+            product.setTotalCount(data.count)
+        })
+    }, [])
+
+    useEffect(() => {
+        fetchProducts(product.selectedType.id, product.selectedAroma.id, product.page, 2).then(data => {
+            product.setProducts(data.rows)
+            product.setTotalCount(data.count)
+        })
+    }, [product.page, product.selectedType, product.selectedAroma,])
 
     return (
         <Container>
             <Row className="mt-2">
                 <img
                     src= {fir}
-                    class="float-left"
+                    alt={}
+                    className="float-left"
                 />
                 <img
                     src= {sec}
-                    class="mx-auto d-block"
+                    alt={}
+                    className="mx-auto d-block"
                 />
                 <img
                     src= {thd}
-                    class="float-right"
+                    alt={}
+                    className="float-right"
                 />
                 {/*<Col md={3}>*/}
                 {/*    <TypeBar/>*/}

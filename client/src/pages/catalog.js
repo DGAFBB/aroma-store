@@ -11,23 +11,6 @@ import {Container} from "react-bootstrap";
 import ProductList from "../components/ProductList";
 
 const Catalog = () => {
-    const {product} = useContext(Context)
-
-    useEffect(() => {
-        fetchTypes().then(data => product.setTypes(data))
-        fetchAromas().then(data => product.setAromas(data))
-        fetchProducts(null, null, 1, 2).then(data => {
-            product.setProducts(data.rows)
-            product.setTotalCount(data.count)
-        })
-    }, [])
-
-    useEffect(() => {
-        fetchProducts(product.selectedType.id, product.selectedAroma.id, product.page, 2).then(data => {
-            product.setProducts(data.rows)
-            product.setTotalCount(data.count)
-        })
-    }, [product.page, product.selectedType, product.selectedAroma,])
     return (
         <Container>
             <Row className="mt-2">
