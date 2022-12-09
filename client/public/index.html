@@ -10,9 +10,11 @@
           crossorigin="anonymous"
   />
   <style>
-  @@font-face {
+  @font-face {
     font-family: Rozovii Chulok; /* Гарнитура шрифта */
-    src: local("Rozovii Chulok");
+    src: local("Rozovii Chulok"),
+      /* Если не получилось, загрузит woff2 */
+    url("/fonts/Rozovii Chulok.ttf");
   ;
   }
   </style>
