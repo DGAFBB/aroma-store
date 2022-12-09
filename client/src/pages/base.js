@@ -31,8 +31,8 @@ const Base = observer(() => {
                     />
                 </Col>
             </Row>
-            <Row>
-                <Col>
+            <Row className="justify-content-md-center row-cont">
+                <Col md="auto" className="header-base">
                 О нас
                 </Col>
             </Row>
