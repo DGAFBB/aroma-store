@@ -1,12 +1,5 @@
 .contr {
     max-width: 100%;
-    min-height: 450px;
-    position: absolute;
-    right:0px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 50px;
-    padding-top:30px;
 }
 .contr1 {
     background: transparent;
