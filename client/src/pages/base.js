@@ -10,8 +10,8 @@ import frst from "../assets/img1.png";
 const Base = observer(() => {
 
     return (
-        <Container className="contr">
-            <Row style={{width:"100%"}} className="float-md-center">
+        <Container fluid>
+            <Row className="justify-content-md-center">
                 <Col md="auto">
                     <img
                     src= {frst}
@@ -31,7 +31,7 @@ const Base = observer(() => {
                     />
                 </Col>
             </Row>
-            <Row style={{backgroundColor:"##5D4037"}}>
+            <Row>
                 <Col>
                 О нас
                 </Col>
