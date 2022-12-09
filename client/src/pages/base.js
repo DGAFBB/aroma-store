@@ -11,7 +11,7 @@ const Base = observer(() => {
 
     return (
         <Container className="contr">
-            <Row style={{width:"200%"}} className="float-md-center">
+            <Row style={{width:"100%"}} className="float-md-center">
                 <Col md="auto">
                     <img
                     src= {frst}
@@ -31,8 +31,10 @@ const Base = observer(() => {
                     />
                 </Col>
             </Row>
-            <Row style={{color:"##5D4037"}}>
-
+            <Row style={{backgroundColor:"##5D4037"}}>
+                <Col>
+                О нас
+                </Col>
             </Row>
         </Container>
     );
