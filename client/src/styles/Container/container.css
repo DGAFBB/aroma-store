@@ -1,7 +1,8 @@
 .row-cont{
-    margin-top: 16px;
     background-color: #5D4037;
 }
 .row-cont2{
     margin-bottom: 30px;
+    vertical-align: middle;
+    align-content: center;
 }

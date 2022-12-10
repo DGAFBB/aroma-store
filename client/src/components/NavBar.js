@@ -20,6 +20,7 @@ import "../styles/fonts/fonts.css";
 import "../styles/Image/Logo.css";
 import "../styles/fonts/Brand_name.css";
 import logo from "../assets/logo.svg";
+import Row from "react-bootstrap/Row";
 
 const NavBar = observer(() => {
     const {user} = useContext(Context)
@@ -64,7 +65,6 @@ const NavBar = observer(() => {
                             <NavLink style={{color: '#370601'}} onClick={() => navigate(LOGIN_ROUTE)}>Войти</NavLink>
                         </Nav>
                         }
-
             </Container>
         </Navbar>
     );

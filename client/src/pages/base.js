@@ -7,6 +7,11 @@ import sec from "../assets/img2.png";
 import thd from "../assets/img_3.png";
 import frst from "../assets/img1.png";
 import "../styles/Container/container.css";
+import fourth from "../assets/img_4.jpeg";
+import ffth from "../assets/img_5.jpeg";
+import "../styles/Image/imeges.css";
+import "../styles/fonts/fonts.css"
+
 
 const Base = observer(() => {
 
@@ -35,6 +40,36 @@ const Base = observer(() => {
             <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center row-cont">
                 <Col md="auto" className="header-base">
                 О нас
+                </Col>
+            </Row>
+            <Row className="row-cont2">
+                <Col ms={3}>
+                    <img
+                        src= {fourth}
+                        alt={fourth}
+                        className="img_base1"
+                    />
+                </Col>
+                <Col ms={3}>
+                    <text className="text-base">
+                    Harmony
+                    </text>
+                    <text className="text-base2">
+                        – это крафтовый бренд, созданный компанией друзей в Москве. Мы производим ароматы для вашего дома - свечи из натурального соевого воска, натуральное ароматическое мыло и диффузоры с уникальными ароматами, которые собираем по всему миру.
+                        <p style={{marginTop:"10px"}}>
+                            У наших продуктов просто потрясающая арома отдача. Ведь мы отбираем только самые необычные и многосложные ароматы, которые интересно раскрываются при использовании.
+                        </p>
+                        <p>
+                        Наш адрес: Москва, ул. Московская, 6 к1
+                        </p>
+                    </text>
+                </Col>
+                <Col ms={3}>
+                    <img
+                        src= {ffth}
+                        alt={ffth}
+                        className="img_base1"
+                    />
                 </Col>
             </Row>
         </Container>

@@ -8,3 +8,23 @@
 
     color: #E8E0DA;
 }
+.text-base{
+    font-family: 'Rozovii Chulok';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 57px;
+    /* identical to box height */
+
+    color: #5D4037;
+}
+.text-base2{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #5D4037;
+}

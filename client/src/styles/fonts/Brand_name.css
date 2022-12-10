@@ -1,8 +1,8 @@
 .navbar-light .navbar-brand{
-    font-family: 'PT Astra Serif';
+    font-family: 'PT Astra Serif', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 19px;
     /* identical to box height */
 
     text-transform: uppercase;
