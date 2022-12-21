@@ -34,9 +34,9 @@ const NavBar = observer(() => {
     return (
         <Navbar>
             <Container className="navbar">
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="navbar-light navbar-brand navbar-mar">Каталог</NavLink>
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(DELIVERY_ROUTE)} className="navbar-light navbar-brand navbar-mar">Доставка</NavLink>
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="navbar-light navbar-brand navbar-mar">Контакты</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CATALOG_ROUTE}>Каталог</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(DELIVERY_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={DELIVERY_ROUTE}>Доставка</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CONTACTS_ROUTE}>Контакты</NavLink>
 
                 <Navbar.Brand onClick={() => navigate(BASE_ROUTE)} className="log">
                     <img
@@ -45,24 +45,24 @@ const NavBar = observer(() => {
                     />
                 </Navbar.Brand>
 
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(FAVOR_ROUTE)} className="navbar-light navbar-brand navbar-mar">Избранное</NavLink>
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} className="navbar-light navbar-brand navbar-mar">Корзина</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(FAVOR_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={FAVOR_ROUTE}>Избранное</NavLink>
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={BASKET_ROUTE}>Корзина</NavLink>
                     {user.isAuth ?
                         <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
                             <NavLink
                         onClick={() => navigate(ADMIN_ROUTE)}
-                            >
+                             to={ADMIN_ROUTE}>
                         Администратор
                             </NavLink>
                             <NavLink
                         onClick={() => logOut()}
-                            >
+                             to={BASE_ROUTE}>
                         Выйти
                             </NavLink>
                         </Nav>
                         :
                         <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
-                            <NavLink style={{color: '#370601'}} onClick={() => navigate(LOGIN_ROUTE)}>Войти</NavLink>
+                            <NavLink style={{color: '#370601'}} onClick={() => navigate(LOGIN_ROUTE)} to={LOGIN_ROUTE}>Войти</NavLink>
                         </Nav>
                         }
             </Container>
