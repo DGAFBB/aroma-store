@@ -11,6 +11,7 @@ import fourth from "../assets/img_4.jpeg";
 import ffth from "../assets/img_5.jpeg";
 import "../styles/Image/imeges.css";
 import "../styles/fonts/fonts.css"
+import "../styles/Buttons/button.css"
 
 
 const Base = observer(() => {
@@ -25,10 +26,12 @@ const Base = observer(() => {
                     />
                 </Col>
                 <Col md="auto">
+                    <Container>
                     <img
                         src= {sec}
                         alt={sec}
                     />
+                    </Container>
                 </Col>
                 <Col md="auto">
                     <img
@@ -42,7 +45,7 @@ const Base = observer(() => {
                 О нас
                 </Col>
             </Row>
-            <Row className="row-cont2">
+            <Row className="justify-content-md-center row-cont2" style={{marginTop:"6%"}}>
                 <Col ms={3}>
                     <img
                         src= {fourth}

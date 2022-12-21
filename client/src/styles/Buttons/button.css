@@ -20,3 +20,17 @@
     background: transparent;
     color: #E8E0DA;
 }
+.milk-button_img{
+    position: relative;
+    font-family: 'PT Astra Serif';
+    font-color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    background: transparent;
+    color: #E8E0DA;
+    margin-right: 25%;
+    margin-bottom: -15%;
+}

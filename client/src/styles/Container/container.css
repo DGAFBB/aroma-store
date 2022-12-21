@@ -2,7 +2,13 @@
     background-color: #5D4037;
 }
 .row-cont2{
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 30px;
     vertical-align: middle;
     align-content: center;
+}
+.col_cont{
+    position: relative;
+    width: 35%;
 }
