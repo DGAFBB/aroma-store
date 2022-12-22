@@ -9,6 +9,10 @@ import "../assets/footer_stars.svg"
 import "../styles/Buttons/button.css"
 import {ABOUT_ROUTE, BASE_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, DELIVERY_ROUTE} from "../utils/consts";
 import {Link, useNavigate} from "react-router-dom";
+import VK from "../assets/VK.svg";
+import Tg from "../assets/Tg.svg";
+import inst from "../assets/inst.svg"
+
 
 const Footer = observer( () => {
     const navigate = useNavigate()
@@ -28,20 +32,41 @@ const Footer = observer( () => {
             </form>
             </Row>
         </Row>
-        <Row className="row-cont4 justify-content-md-center">
+        <Row className="row-cont4 justify-content-md-center" style={{minHeight:'30.1vh'}}>
             <Col xs={4} className="d-flex flex-column-reverse">
                 <Link style={{color:'#370601'}} onClick={() => navigate(ABOUT_ROUTE)} className="col-link" to={ABOUT_ROUTE}>О нас</Link><p/>
                 <Link style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="col-link" to={CATALOG_ROUTE}>Каталог</Link><p/>
                 <Link style={{color:'#370601'}} onClick={() => navigate(DELIVERY_ROUTE)} className="col-link" to={DELIVERY_ROUTE}>Доставка</Link><p/>
                 <Link style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="col-link" to={CONTACTS_ROUTE}>Контакты</Link><p/>
             </Col>
-            <Col className="img-cont justify-content-md-center">
-               <Link to={BASE_ROUTE}>
+            <Col className="img-cont justify-content-md-center align-items-center">
+                <Row>
+                    <Link to={BASE_ROUTE}>
                    <img
                        src= {logo}
                        alt="React Bootstrap logo"
                 />
-               </Link>
+                    </Link>
+                </Row>
+                <div>
+                    <img
+                        href="https://vk.com/litarchive"
+                        src={VK}
+                        alt={VK}
+                    />
+                    <img
+                        style={{paddingLeft:"5%"}}
+                        href="https://web.telegram.org/z/#-1231704267"
+                        src={Tg}
+                        alt={Tg}
+                    />
+                    <img
+                        style={{paddingLeft:"5%"}}
+                        href="https://www.instagram.com/litarchive/"
+                        src={inst}
+                        alt={inst}
+                    />
+                </div>
             </Col>
             <Col xs={4} className="justify-content-md-center">
                 <text className="col-text">+7 (988) 680 42 22<p/>

@@ -11,14 +11,14 @@
     border-bottom: 1px solid #5D4037;
     padding-top: 5%;
 }
-/*::-webkit-input-placeholder {opacity:50%; color:#370601;}*/
-/*::-moz-placeholder          {opacity:50%; color:#370601;}!* Firefox 19+ *!*/
-/*:-moz-placeholder           {opacity:50%; color:#370601;}!* Firefox 18- *!*/
-/*:-ms-input-placeholder      {opacity:50%; color:#370601;}*/
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+.log-form::-webkit-input-placeholder {color:#370601;}
+.log-form::-moz-placeholder          {color:#370601;}/* Firefox 19+ */
+.log-form:-moz-placeholder           {color:#370601;}/* Firefox 18- */
+.log-form:-ms-input-placeholder      {color:#370601;}
+.log-form:focus::-webkit-input-placeholder {color: transparent}
+.log-form:focus::-moz-placeholder          {color: transparent}
+.log-form:focus:-moz-placeholder           {color: transparent}
+.log-form:focus:-ms-input-placeholder      {color: transparent}
 .check-form{
     font-family: 'PT Astra Serif';
     font-style: normal;

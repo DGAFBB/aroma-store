@@ -7,7 +7,7 @@
     line-height: 21px;
     /* identical to box height */
     background: #5D4037;
-    border: 2px solid #5D4037;
+    border: 1px solid #5D4037;
     border-radius: 0px ;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -22,7 +22,7 @@
     line-height: 21px;
     /* identical to box height */
     background: #E8E0DA;
-    border: 2px solid #5D4037;
+    border: 1px solid #5D4037;
     border-radius: 0px ;
     box-shadow: rgba(255,255,255,0);
 }
@@ -35,7 +35,7 @@
     font-size: 18px;
     line-height: 21px;
     /* identical to box height */
-    border: 2px solid #EDE6E1;
+    border: 1px solid #EDE6E1;
     background: #E8E0DA;
     margin-left: 1%;
 
@@ -53,4 +53,18 @@
     color: #E8E0DA;
     margin-right: 25%;
     margin-bottom: -15%;
+}
+.transparent-button{
+    font-family: 'PT Astra Serif', serif;
+    font-color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #5D4037;
+    background: transparent;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }

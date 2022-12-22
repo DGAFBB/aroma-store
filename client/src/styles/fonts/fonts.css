@@ -55,3 +55,40 @@
 
     color: #5D4037;
 }
+.heading2{
+
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+
+    /* шоколадный */
+
+    color: #5D4037;
+}
+.heading5{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    /* шоколадный */
+
+    color: #5D4037;
+}
+.heading6{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    text-decoration-line: underline;
+
+    /* шоколадный */
+
+    color: #5D4037;
+}

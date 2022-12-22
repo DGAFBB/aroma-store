@@ -95,10 +95,10 @@
     text-indent: 15px;
     color: #E8E0DA;
 }
-::-webkit-input-placeholder {color:#E8E0DA;}
-::-moz-placeholder          {color:#E8E0DA;}/* Firefox 19+ */
-:-moz-placeholder           {color:#E8E0DA;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#E8E0DA;}
+::-webkit-input-placeholder {opacity:50%; color:#E8E0DA;}
+::-moz-placeholder          {opacity:50%; color:#E8E0DA;}/* Firefox 19+ */
+:-moz-placeholder           {opacity:50%; color:#E8E0DA;}/* Firefox 18- */
+:-ms-input-placeholder      {opacity:50%; color:#E8E0DA;}
 :focus::-webkit-input-placeholder {color: transparent}
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
