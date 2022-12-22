@@ -1,0 +1,73 @@
+.row-cont3{
+    width: 100%;
+    background-image: image("../client/src/assets/footer_stars.svg");
+}
+.row-cont4{
+    background-color: #E8E0DA;
+    width: 100%;
+    margin: auto;
+}
+.row-cont5{
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer_font3{
+    font-family: 'PT Astra Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #EDE6E1;
+}
+.footer_font4{
+    font-family: 'PT Astra Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+
+    color: #EDE6E1;
+}
+.footer_font1{
+    font-family: 'PT Astra Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #370601;
+}
+.footer_font2{
+    font-family: 'PT Astra Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #E8E0DA;
+}
+.footer_form {
+    background: transparent;
+    border: 2px solid #EDE6E1;
+    width: 18%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-family: 'PT Astra Serif';
+    font-color: #EDE6E1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-indent: 15px;
+}
+::-webkit-input-placeholder {color:#E8E0DA;}
+::-moz-placeholder          {color:#E8E0DA;}/* Firefox 19+ */
+:-moz-placeholder           {color:#E8E0DA;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#E8E0DA;}
+

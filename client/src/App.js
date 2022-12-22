@@ -8,6 +8,7 @@ import { GuestCheck} from "./http/guestAPI";
 import {Spinner} from "react-bootstrap";
 import './styles/App/App.css';
 import {AdminCheck} from "./http/adminAPI";
+import Footer from "./components/Footer";
 
 const App = observer(() => {
     const {user} = useContext(Context)
@@ -39,6 +40,7 @@ const App = observer(() => {
          <BrowserRouter>
             <NavBar />
             <AppRouter />
+             <Footer />
          </BrowserRouter>
     );
 });

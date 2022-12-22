@@ -1,28 +1,30 @@
 .brown-button{
-    font-family: 'PT Astra Serif';
+    font-family: 'PT Astra Serif', serif;
     font-color: #E8E0DA;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     /* identical to box height */
-    background: transparent;
-    color: #5D4037;
+    background: #5D4037;
+    border: 2px solid #5D4037;
 }
 .milk-button{
-    font-family: 'PT Astra Serif';
+    font-family: 'PT Astra Serif', serif;
     font-color: #5D4037;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     /* identical to box height */
-    background: transparent;
-    color: #E8E0DA;
+    border: 2px solid #EDE6E1;
+    background: #E8E0DA;
+    margin-left: 1%;
+
 }
 .milk-button_img{
     position: relative;
-    font-family: 'PT Astra Serif';
+    font-family: 'PT Astra Serif', serif;
     font-color: #5D4037;
     font-style: normal;
     font-weight: 400;
