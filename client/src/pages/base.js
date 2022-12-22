@@ -7,8 +7,8 @@ import sec from "../assets/img2.svg";
 import thd from "../assets/img_3.png";
 import frst from "../assets/img1.png";
 import "../styles/Container/container.css";
-import fourth from "../assets/img_4.jpeg";
-import ffth from "../assets/img_5.jpeg";
+import fourth from "../assets/img_4.svg";
+import ffth from "../assets/img_5.svg";
 import "../styles/Image/imeges.css";
 import "../styles/fonts/fonts.css"
 import "../styles/Buttons/button.css"

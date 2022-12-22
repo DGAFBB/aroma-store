@@ -57,6 +57,7 @@
     line-height: 25px;
 
     color: #EDE6E1;
+    margin-top: 3%;
 }
 .footer_font1{
     font-family: 'PT Astra Serif', serif;
@@ -92,9 +93,14 @@
     font-size: 18px;
     line-height: 21px;
     text-indent: 15px;
+    color: #E8E0DA;
 }
 ::-webkit-input-placeholder {color:#E8E0DA;}
 ::-moz-placeholder          {color:#E8E0DA;}/* Firefox 19+ */
 :-moz-placeholder           {color:#E8E0DA;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#E8E0DA;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 

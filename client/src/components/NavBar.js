@@ -20,7 +20,6 @@ import "../styles/fonts/fonts.css";
 import "../styles/Image/Logo.css";
 import "../styles/fonts/Brand_name.css";
 import logo from "../assets/logo.svg";
-import Row from "react-bootstrap/Row";
 
 const NavBar = observer(() => {
     const {user} = useContext(Context)
@@ -39,10 +38,11 @@ const NavBar = observer(() => {
                     <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CONTACTS_ROUTE}>Контакты</NavLink>
 
                 <Navbar.Brand onClick={() => navigate(BASE_ROUTE)} className="log">
-                    <img
+                    <NavLink to={BASE_ROUTE}><img
                         src= {logo}
                         alt="React Bootstrap logo"
                     />
+                    </NavLink>
                 </Navbar.Brand>
 
                     <NavLink style={{color:'#370601'}} onClick={() => navigate(FAVOR_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={FAVOR_ROUTE}>Избранное</NavLink>

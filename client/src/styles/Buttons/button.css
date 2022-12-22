@@ -8,7 +8,25 @@
     /* identical to box height */
     background: #5D4037;
     border: 2px solid #5D4037;
+    border-radius: 0px ;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+.brown-button:focus,
+.brown-button:active{
+    font-family: 'PT Astra Serif', serif;
+    font-color: #E8E0DA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    background: #E8E0DA;
+    border: 2px solid #5D4037;
+    border-radius: 0px ;
+    box-shadow: rgba(255,255,255,0);
+}
+
 .milk-button{
     font-family: 'PT Astra Serif', serif;
     font-color: #5D4037;

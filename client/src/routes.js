@@ -4,7 +4,7 @@ import Base from "./pages/base";
 import Product from "./pages/product";
 import Catalog from "./pages/catalog";
 import Auth from "./pages/auth";
-import Admin from "./pages/admin";
+import Admin_account from "./pages/admin_account";
 import {
     BASE_ROUTE,
     BASKET_ROUTE,
@@ -23,7 +23,7 @@ import Contacts from "./pages/contacts";
 export const authAdminRoutes = [
     {
         path: ADMIN_ROUTE,
-        Component: Admin
+        Component: Admin_account
     },
 ]
 export const authGuestRoutes =[

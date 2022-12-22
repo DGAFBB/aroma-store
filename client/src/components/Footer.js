@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {observer} from "mobx-react-lite";
 import logo from "../assets/logo.svg";
 import Row from "react-bootstrap/Row";
@@ -8,11 +8,9 @@ import "../styles/Footer/footer.css"
 import "../assets/footer_stars.svg"
 import "../styles/Buttons/button.css"
 import {ABOUT_ROUTE, BASE_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, DELIVERY_ROUTE} from "../utils/consts";
-import {Context} from "../index";
-import {Link, NavLink, useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const Footer = observer( () => {
-    const {user} = useContext(Context)
     const navigate = useNavigate()
     return (
         <Container fluid className="justify-content-md-center"  style={{width:"100%", backgroundColor:"#5D4037"}}>
@@ -38,9 +36,10 @@ const Footer = observer( () => {
                 <Link style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="col-link" to={CONTACTS_ROUTE}>Контакты</Link><p/>
             </Col>
             <Col className="img-cont justify-content-md-center">
-               <Link to={BASE_ROUTE}> <img
-                src= {logo}
-                alt="React Bootstrap logo"
+               <Link to={BASE_ROUTE}>
+                   <img
+                       src= {logo}
+                       alt="React Bootstrap logo"
                 />
                </Link>
             </Col>
