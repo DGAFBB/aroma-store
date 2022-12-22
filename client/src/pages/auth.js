@@ -55,14 +55,25 @@ const Auth = observer(() => {
     }
 
     return (
-        <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '62.5vh' }}>
-            <card style={{ width: 600, backgroundColor: "#EDE6E1" }} className="p-5">
+        <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '65.5vh' }}>
+            <card style={{ width: 600, backgroundColor: "#EDE6E1"}} className="p-5">
                 <h2 className="reg-head" >{isLogin ? 'Авторизация' : 'Регистрация'}</h2>
                 {location.pathname === ADMIN_ROUTE + REGISTRATION_ROUTE || location.pathname === ADMIN_ROUTE + LOGIN_ROUTE ? (
                     <Form className="d-flex flex-column">
-                        <input className="log-form" type="text"   placeholder="Логин">
+                        <input type="email" className="log-form"  placeholder="E-mail">
                         </input>
-                        <input className="log-form" type="password"  placeholder="Пароль">
+                        <label className="form-check-label">
+                            <input className="form-check-input check-form" type="checkbox"> Подписаться на новости и скидки</input>
+                        </label>
+                        <input className="log-form" type="number"  placeholder="Контактный телефон">
+                        </input>
+                        <input className="log-form" type="password"  placeholder="Придумайте пароль">
+                        </input>
+                        <input className="log-form" type="password"  placeholder="Повторите пароль">
+                        </input>
+                        <input className="log-form" type="text"   placeholder="Введите свое имя">
+                    </input>
+                        <input className="log-form" type="text"   placeholder="Введите свою фамилию">
                         </input>
                         <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
                             <button className="brown-button" onClick={click}>
@@ -95,8 +106,10 @@ const Auth = observer(() => {
                     </Form>
                 ) : (
                     <Form className="d-flex flex-column">
-                            <input className="log-form" type="email"  placeholder="E-mail">
+                            <input className="log-form" type="number"  placeholder="Номер телефона">
                             </input>
+                        <input className="log-form" type="password"  placeholder="Пароль">
+                        </input>
                         <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
                             <button className="brown-button" onClick={click} style={{width:"40%"}}>
                                 {isLogin ? 'Войти' : null}

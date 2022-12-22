@@ -11,11 +11,20 @@
     border-bottom: 1px solid #5D4037;
     padding-top: 5%;
 }
-::-webkit-input-placeholder {opacity:50%; color:#370601;}
-::-moz-placeholder          {opacity:50%; color:#370601;}/* Firefox 19+ */
-:-moz-placeholder           {opacity:50%; color:#370601;}/* Firefox 18- */
-:-ms-input-placeholder      {opacity:50%; color:#370601;}
+/*::-webkit-input-placeholder {opacity:50%; color:#370601;}*/
+/*::-moz-placeholder          {opacity:50%; color:#370601;}!* Firefox 19+ *!*/
+/*:-moz-placeholder           {opacity:50%; color:#370601;}!* Firefox 18- *!*/
+/*:-ms-input-placeholder      {opacity:50%; color:#370601;}*/
 :focus::-webkit-input-placeholder {color: transparent}
 :focus::-moz-placeholder          {color: transparent}
 :focus:-moz-placeholder           {color: transparent}
 :focus:-ms-input-placeholder      {color: transparent}
+.check-form{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #5D4037;
+}
