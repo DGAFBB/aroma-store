@@ -3,7 +3,7 @@ import {Container} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {observer} from "mobx-react-lite";
-import sec from "../assets/img2.png";
+import sec from "../assets/img2.svg";
 import thd from "../assets/img_3.png";
 import frst from "../assets/img1.png";
 import "../styles/Container/container.css";
@@ -12,8 +12,17 @@ import ffth from "../assets/img_5.jpeg";
 import "../styles/Image/imeges.css";
 import "../styles/fonts/fonts.css"
 import "../styles/Buttons/button.css"
+import * as PropTypes from "prop-types";
 
 
+function SkipLink(props) {
+    return null;
+}
+
+SkipLink.propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.node
+};
 const Base = observer(() => {
 
     return (
@@ -40,7 +49,7 @@ const Base = observer(() => {
                     />
                 </Col>
             </Row>
-            <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center row-cont">
+            <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center row-cont" id="/about">
                 <Col md="auto" className="header-base">
                 О нас
                 </Col>

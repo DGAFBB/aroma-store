@@ -14,7 +14,7 @@ import {
     REGISTRATION_ROUTE,
     CATALOG_ROUTE,
     ADMIN_ROUTE,
-    PERSONAL_ACCOUNT_ROUTE, CONTACTS_ROUTE, FAVOR_ROUTE, GUEST_ROUTE
+    PERSONAL_ACCOUNT_ROUTE, CONTACTS_ROUTE, FAVOR_ROUTE, GUEST_ROUTE, ABOUT_ROUTE
 } from "./utils/consts";
 import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
@@ -36,6 +36,10 @@ export const authGuestRoutes =[
 export const publicRoutes = [
     {
         path: BASE_ROUTE,
+        Component: Base
+    },
+    {
+        path: ABOUT_ROUTE,
         Component: Base
     },
     {

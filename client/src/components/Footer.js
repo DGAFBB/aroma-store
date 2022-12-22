@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {observer} from "mobx-react-lite";
 import logo from "../assets/logo.svg";
 import Row from "react-bootstrap/Row";
@@ -7,8 +7,13 @@ import Col from "react-bootstrap/Col";
 import "../styles/Footer/footer.css"
 import "../assets/footer_stars.svg"
 import "../styles/Buttons/button.css"
+import {ABOUT_ROUTE, BASE_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, DELIVERY_ROUTE} from "../utils/consts";
+import {Context} from "../index";
+import {Link, NavLink, useNavigate} from "react-router-dom";
 
 const Footer = observer( () => {
+    const {user} = useContext(Context)
+    const navigate = useNavigate()
     return (
         <Container fluid className="justify-content-md-center"  style={{width:"100%", backgroundColor:"#5D4037"}}>
         <Row className="row-cont3 justify-content-md-center" style={{backgroundImage:"../client/src/assets/footer_stars.svg"}}>
@@ -26,17 +31,25 @@ const Footer = observer( () => {
             </Row>
         </Row>
         <Row className="row-cont4 justify-content-md-center">
-            <Col xs={5}>
-                <text></text>
+            <Col xs={4} className="d-flex flex-column-reverse">
+                <Link style={{color:'#370601'}} onClick={() => navigate(ABOUT_ROUTE)} className="col-link" to={ABOUT_ROUTE}>О нас</Link><p/>
+                <Link style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="col-link" to={CATALOG_ROUTE}>Каталог</Link><p/>
+                <Link style={{color:'#370601'}} onClick={() => navigate(DELIVERY_ROUTE)} className="col-link" to={DELIVERY_ROUTE}>Доставка</Link><p/>
+                <Link style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="col-link" to={CONTACTS_ROUTE}>Контакты</Link><p/>
             </Col>
-            <Col>
-                <img
+            <Col className="img-cont justify-content-md-center">
+               <Link to={BASE_ROUTE}> <img
                 src= {logo}
                 alt="React Bootstrap logo"
                 />
+               </Link>
             </Col>
-            <Col xs={5}>
-                <text></text>
+            <Col xs={4} className="justify-content-md-center">
+                <text className="col-text">+7 (988) 680 42 22<p/>
+                    harmony@gmail.com<p/>
+                    Москва, ул. Московская,<p/>
+                    д 6, к 1
+                </text>
             </Col>
         </Row >
             <Row className="row-cont5 justify-content-md-center">
