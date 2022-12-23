@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import { Card, Container, Form} from "react-bootstrap";
+import { Container, Form} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import {observer} from "mobx-react-lite";
 import {Link, NavLink, useLocation, useNavigate} from "react-router-dom";
@@ -11,10 +11,9 @@ import {
     LOGIN_ROUTE, PERSONAL_ACCOUNT_ROUTE,
     REGISTRATION_ROUTE
 } from "../utils/consts";
-import {AdminLogin, AdminRegistration} from "../http/adminAPI";
+import {AdminLogin} from "../http/adminAPI";
 import {GuestLogin, GuestRegistration} from "../http/guestAPI";
 import {Context} from "../index";
-import Col from "react-bootstrap/Col";
 import "../styles/Form/form.css";
 import "../styles/Buttons/button.css";
 import "../styles/fonts/fonts.css"
@@ -60,23 +59,23 @@ const Auth = observer(() => {
                 <h2 className="reg-head" >{isLogin ? 'Авторизация' : 'Регистрация'}</h2>
                 {location.pathname === ADMIN_ROUTE + REGISTRATION_ROUTE || location.pathname === ADMIN_ROUTE + LOGIN_ROUTE ? (
                     <Form className="d-flex flex-column">
-                        <input type="email" className="log-form"  placeholder="E-mail">
+                        <input type="email" className="log-form"  placeholder="E-mail" style={{marginTop:"2%"}}>
                         </input>
                         <label className="form-check-label">
                             <input className="form-check-input check-form" type="checkbox"> Подписаться на новости и скидки</input>
                         </label>
-                        <input className="log-form" type="number"  placeholder="Контактный телефон">
+                        <input className="log-form" type="number"  placeholder="Контактный телефон" style={{marginTop:"2%"}}>
                         </input>
-                        <input className="log-form" type="password"  placeholder="Придумайте пароль">
+                        <input className="log-form" type="password"  placeholder="Придумайте пароль" style={{marginTop:"2%"}}>
                         </input>
-                        <input className="log-form" type="password"  placeholder="Повторите пароль">
+                        <input className="log-form" type="password"  placeholder="Повторите пароль" style={{marginTop:"2%"}}>
                         </input>
-                        <input className="log-form" type="text"   placeholder="Введите свое имя">
+                        <input className="log-form" type="text"   placeholder="Введите свое имя" style={{marginTop:"2%"}}>
                     </input>
-                        <input className="log-form" type="text"   placeholder="Введите свою фамилию">
+                        <input className="log-form" type="text"   placeholder="Введите свою фамилию"style={{marginTop:"2%"}}>
                         </input>
                         <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
-                            <button className="brown-button" onClick={click}>
+                            <button className="brown-button" onClick={click} style={{width:"40%", marginTop:"7%"}}>
                                 {isLogin ? 'Войти' : 'Регистрация'}
                             </button>
                             {isLogin ? (
@@ -106,12 +105,12 @@ const Auth = observer(() => {
                     </Form>
                 ) : (
                     <Form className="d-flex flex-column">
-                            <input className="log-form" type="number"  placeholder="Номер телефона">
+                            <input className="log-form" type="number"  placeholder="Номер телефона" style={{marginTop:"2%"}}>
                             </input>
-                        <input className="log-form" type="password"  placeholder="Пароль">
+                        <input className="log-form" type="password"  placeholder="Пароль" style={{marginTop:"2%"}}>
                         </input>
                         <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
-                            <button className="brown-button" onClick={click} style={{width:"40%"}}>
+                            <button className="brown-button" onClick={click} style={{width:"40%", marginTop:"7%"}}>
                                 {isLogin ? 'Войти' : null}
                             </button>
                         </Row>

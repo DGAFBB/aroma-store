@@ -18,6 +18,15 @@
 
     color: #5D4037;
 }
+.text-base0{
+    font-family: 'Rozovii Chulok';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    /* identical to box height */
+
+    color: #E8E0DA;
+}
 .text-base2{
     font-family: 'PT Astra Serif';
     font-style: normal;
@@ -27,6 +36,15 @@
     /* identical to box height */
 
     color: #5D4037;
+}
+.text-base2_0{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    /* identical to box height */
+
+    color: #E8E0DA;
 }
 .reg-head{
     font-family: 'PT Astra Serif';

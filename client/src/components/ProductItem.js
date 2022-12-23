@@ -1,12 +1,13 @@
 import React from 'react';
 import {Card, Col} from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import heart from '../assets/heart.png';
+import heart from '../assets/heart.svg';
 import { useNavigate } from 'react-router-dom';
 import {PRODUCT_ROUTE} from '../utils/consts';
 
 const ProductItem = ({product}) => {
     const navigate = useNavigate();
+    const rating = require('react-rating');
     return (
         <Col md={3} className={"mt-3"} onClick={() => navigate(PRODUCT_ROUTE + '/' + product.id)}>
             <Card style={{width: 150, cursor: 'pointer'}} border={"light"}>

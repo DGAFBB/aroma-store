@@ -1,6 +1,9 @@
 .row-cont{
     background-color: #5D4037;
 }
+.row-container{
+    background-color: transparent;
+}
 .row-cont2{
     margin-left: 5%;
     margin-right: 5%;
@@ -11,4 +14,8 @@
 .col_cont{
     position: relative;
     width: 35%;
+}
+.col_c{
+    padding-left: 0;
+    padding-right: 0;
 }

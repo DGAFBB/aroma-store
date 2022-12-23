@@ -13,7 +13,11 @@ import "../styles/Image/imeges.css";
 import "../styles/fonts/fonts.css"
 import "../styles/Buttons/button.css"
 import * as PropTypes from "prop-types";
-
+// import product1 from "../assets/us_product1.png";
+// import product2 from "../assets/us_product2.png";
+// import product3 from "../assets/us_product3.png";
+import us_product from "../assets/us_product.svg"
+import ProductList from "../components/ProductList";
 
 function SkipLink(props) {
     return null;
@@ -54,15 +58,15 @@ const Base = observer(() => {
                 О нас
                 </Col>
             </Row>
-            <Row className="justify-content-md-center row-cont2" style={{marginTop:"6%"}}>
-                <Col ms={3}>
+            <Row className="justify-content-md-center row-container" style={{marginTop:"6%"}}>
+                <Col ms={3} className="justify-content-md-center">
                     <img
                         src= {fourth}
                         alt={fourth}
                         className="img_base1"
                     />
                 </Col>
-                <Col ms={3}>
+                <Col ms={4}>
                     <text className="text-base">
                     Harmony
                     </text>
@@ -76,13 +80,77 @@ const Base = observer(() => {
                         </p>
                     </text>
                 </Col>
-                <Col ms={3}>
+                <Col ms={3} className="justify-content-md-center">
                     <img
                         src= {ffth}
                         alt={ffth}
                         className="img_base1"
                     />
                 </Col>
+            </Row>
+            <Row className="justify-content-md-center row-cont" style={{paddingTop:"2%", paddingBottom:"1%"}}>
+            <text className="header-base">Наши товары</text>
+            </Row>
+            <Row className="justify-content-md-center row-cont" style={{backgroundColor:"#5D4037"}}>
+
+                <img
+                    src= {us_product}
+                    alt={us_product}
+                    className="img_base1"
+                />
+            </Row>
+                {/*<Col ms={3}>*/}
+                {/*    <img*/}
+                {/*        src= {product1}*/}
+                {/*        alt={product1}*/}
+                {/*        className="img_base1"*/}
+                {/*    />*/}
+                {/*</Col>*/}
+                {/*<Col ms={3}>*/}
+                {/*    <img*/}
+                {/*        src= {product2}*/}
+                {/*        alt={product2}*/}
+                {/*        className="img_base1"*/}
+                {/*    />*/}
+                {/*</Col>*/}
+                {/*<Col ms={3}>*/}
+                {/*    <img*/}
+                {/*        src= {product3}*/}
+                {/*        alt={product3}*/}
+                {/*        className="img_base1"*/}
+                {/*    />*/}
+                {/*</Col>*/}
+            <Row className="justify-content-md-center row-cont">
+                <Row style={{width:"77%", paddingBottom:"5%"}}>
+                    <Col>
+                        <p className="text-base0" style={{textAlign:"center",paddingTop:"5%", lineHeight:"20px"}}>
+                        Мыло
+                        </p>
+                        <p className="text-base2_0" style={{textAlign:"center", lineHeight:"0px"}}>
+                            натуральное ароматическое
+                        </p>
+                    </Col>
+                    <Col>
+                        <p className="text-base0" style={{textAlign:"center",paddingTop:"5%", lineHeight:"20px"}}>
+                            Диффузоры
+                        </p>
+                        <p className="text-base2_0" style={{textAlign:"center", lineHeight:"0px"}}>
+                            с уникальным ароматом
+                        </p>
+                    </Col>
+                    <Col>
+                        <p className="text-base0" style={{textAlign:"center",paddingTop:"5%", lineHeight:"20px"}}>
+                            Свечи
+                        </p>
+                        <p className="text-base2_0" style={{textAlign:"center", lineHeight:"0px"}}>
+                            из соевого воска
+                        </p>
+                    </Col>
+                </Row>
+            </Row>
+            <Row className="justify-content-md-center">
+                <text className="text-base">Популярное</text>
+                <ProductList></ProductList>
             </Row>
         </Container>
     );

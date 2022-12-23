@@ -22,12 +22,13 @@
     background: transparent;
     border-left: 2px solid #5D4037;
     border-right: 2px solid #5D4037;
-    /*padding-left: 5%;*/
-    /*padding-right: 5%;*/
+}
+.cont_icon{
+    border-top: 2px solid #5D4037;
 }
 .row-cont3{
     width: 100%;
-    background-image: image("../client/src/assets/footer_stars.svg");
+    background-image: image("../client/src/assets/stars.png");
 }
 .row-cont4{
     background-color: #E8E0DA;
@@ -37,7 +38,7 @@
 .row-cont5{
     width: 100%;
     margin: auto;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 2%;
 }
 .footer_font3{
