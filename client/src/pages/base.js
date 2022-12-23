@@ -19,7 +19,7 @@ import * as PropTypes from "prop-types";
 import us_product from "../assets/us_product.svg"
 import ProductList from "../components/ProductList";
 import {Link} from "react-router-dom";
-import {CATALOG_ROUTE} from "../utils/consts";
+import {ADMIN_CATALOG_ROUTE, CATALOG_ROUTE} from "../utils/consts";
 import ProductListVar from "../components/productlistvar";
 import ProductItem from "../components/ProductItem";
 import ProductItemVar from "../components/productitemvar";
@@ -86,7 +86,7 @@ const Base = observer(() => {
                         Наш адрес: Москва, ул. Московская, 6 к1
                         </p>
                     </text>
-                    <Row className="justify-content-md-center align-items-center" style={{paddingTop:"8%"}}>
+                    <Row className="justify-content-md-center align-items-center" style={{paddingTop:"8%", paddingBottom:"20%"}}>
                     <Link to={CATALOG_ROUTE} style={{paddingRight:"23%"}}><button className="brown-button" style={{width:"146%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>Смотреть каталог</button></Link>
                     </Row>
                 </Col>
@@ -159,14 +159,22 @@ const Base = observer(() => {
                     </Col>
                 </Row>
             </Row>
-            <Row className="justify-content-md-center">
-                <Row><text className="header-base0">Популярное</text></Row>
-                <Link to={CATALOG_ROUTE}>
-                    <button className="brown-button" style={{width:"146%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                <Row className="justify-content-md-center">
+                    <text className="header-base0">Популярное</text>
+                </Row>
+                <Row style={{paddingTop:"5%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
+                    <Link to={CATALOG_ROUTE}>
+                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                         Смотреть каталог
                     </button>
-                </Link>
-            </Row>
+                    </Link>
+                </Row>
+            <Row style={{ paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center">
+                <Link to={ADMIN_CATALOG_ROUTE}>
+                <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                    Админская часть
+                </button>
+            </Link></Row>
         </Container>
     );
 });

@@ -1,3 +1,12 @@
+.admin-header{
+    font-family: 'PT Astra Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
 .header-base{
     font-family: 'Rozovii Chulok';
     font-style: normal;

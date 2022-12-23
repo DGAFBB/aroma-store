@@ -14,3 +14,9 @@
     justify-content: space-between;
     background-color: #EDE6E1;
 }
+.active {
+    font-weight: bold;
+}
+.admin_nav{
+    background-color: rgba(93, 64, 55, 10%);
+}

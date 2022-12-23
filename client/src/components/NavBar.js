@@ -32,9 +32,12 @@ const NavBar = observer(() => {
     return (
         <Navbar>
             <Container className="navbar">
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CATALOG_ROUTE} activeClassName='active'>Каталог</NavLink>
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CONTACTS_ROUTE} activeClassName='active'>Контакты</NavLink>
-
+                    <Nav style={{color:'#370601'}} className="navbar-light navbar-brand navbar-mar">
+                        <NavLink style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)}  to={CATALOG_ROUTE} activeClassName='active'>Каталог</NavLink>
+                    </Nav>
+                <Nav style={{color:'#370601'}} className="navbar-light navbar-brand navbar-mar">
+                    <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)}  to={CONTACTS_ROUTE} activeClassName='active'>Контакты</NavLink>
+                </Nav>
                 <Navbar.Brand onClick={() => navigate(BASE_ROUTE)} className="log">
                     <NavLink to={BASE_ROUTE} activeClassName='active'><img
                         src= {logo}
@@ -42,8 +45,9 @@ const NavBar = observer(() => {
                     />
                     </NavLink>
                 </Navbar.Brand>
-
-                   <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={BASKET_ROUTE} activeClassName='active'>Корзина</NavLink>
+                <Nav style={{color:'#370601'}} className="navbar-light navbar-brand navbar-mar">
+                   <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} to={BASKET_ROUTE} activeClassName='active'>Корзина</NavLink>
+                </Nav>
                     {user.isAuth ?
                         <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
                             <NavLink
