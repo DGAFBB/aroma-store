@@ -4,11 +4,11 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import ListGroup from "react-bootstrap/ListGroup";
 
-const VolmBar = observer( () => {
+const PriceBar = observer( () => {
     const {product} = useContext(Context)
     return (
         <ListGroup>
-            {product.volms.map(volm =>
+            {product.prices.map(volm =>
                 <ListGroup.Item
                     style={{cursor: 'pointer'}}
                     active={volm.id === product.selectedVolm.id}
@@ -21,4 +21,4 @@ const VolmBar = observer( () => {
         </ListGroup>
     );
 });
-export default VolmBar;
+export default PriceBar;

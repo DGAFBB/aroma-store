@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Col} from "react-bootstrap";
+import {Card, Col, Row} from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import heart from '../assets/heart.svg';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +8,24 @@ import {PRODUCT_ROUTE} from '../utils/consts';
 const ProductItem = ({product}) => {
     const navigate = useNavigate();
     const rating = require('react-rating');
+    const path = `${product.id}.png`
+    return (
+        <Row
+            className="parkItem"
+            style={{ cursor: 'pointer' }}
+            onClick={() => navigate(PRODUCT_ROUTE + '/' + product.id)}
+        >
+            <Col>
+            <Image width="100%" src={process.env.REACT_APP_API_URL + path} />
+        </Col>
+            <Col>
+                <Row>{product.title}</Row>
+                <Row> {product.description} </Row>
+                <Row> {product.price} </Row>
+            </Col>
+
+        </Row>
+    )
     return (
         <Col md={3} className={"mt-3"} onClick={() => navigate(PRODUCT_ROUTE + '/' + product.id)}>
             <Card style={{width: 150, cursor: 'pointer'}} border={"light"}>

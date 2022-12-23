@@ -1,11 +1,10 @@
 .brown-button{
-    font-family: 'PT Astra Serif', serif;
-    font-color: #E8E0DA;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
+    font-family: 'PT Astra Serif', serif !important;
+    color: #E8E0DA !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
     background: #5D4037;
     border: 1px solid #5D4037;
     border-radius: 0px ;
@@ -15,7 +14,7 @@
 .brown-button:focus,
 .brown-button:active{
     font-family: 'PT Astra Serif', serif;
-    font-color: #E8E0DA;
+    color: #5D4037;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

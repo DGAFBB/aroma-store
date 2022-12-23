@@ -18,6 +18,11 @@ import * as PropTypes from "prop-types";
 // import product3 from "../assets/us_product3.png";
 import us_product from "../assets/us_product.svg"
 import ProductList from "../components/ProductList";
+import {Link} from "react-router-dom";
+import {CATALOG_ROUTE} from "../utils/consts";
+import ProductListVar from "../components/productlistvar";
+import ProductItem from "../components/ProductItem";
+import ProductItemVar from "../components/productitemvar";
 
 function SkipLink(props) {
     return null;
@@ -53,25 +58,27 @@ const Base = observer(() => {
                     />
                 </Col>
             </Row>
-            <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center row-cont" id="/about">
+            <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center row-cont" id="about">
                 <Col md="auto" className="header-base">
                 О нас
                 </Col>
             </Row>
             <Row className="justify-content-md-center row-container" style={{marginTop:"6%"}}>
-                <Col ms={3} className="justify-content-md-center">
+                <Col className="col_c justify-content-md-center align-items-center">
                     <img
+                        style={{paddingBottom:"15%", paddingLeft:"8%"}}
                         src= {fourth}
                         alt={fourth}
                         className="img_base1"
                     />
                 </Col>
-                <Col ms={4}>
+                <Col md={4} className="col_c">
                     <text className="text-base">
                     Harmony
                     </text>
                     <text className="text-base2">
-                        – это крафтовый бренд, созданный компанией друзей в Москве. Мы производим ароматы для вашего дома - свечи из натурального соевого воска, натуральное ароматическое мыло и диффузоры с уникальными ароматами, которые собираем по всему миру.
+                        – это крафтовый бренд, созданный компанией
+                        <br/> друзей в Москве. Мы производим ароматы для вашего дома - свечи из натурального соевого воска, натуральное ароматическое мыло и диффузоры с уникальными ароматами, которые собираем по всему миру.
                         <p style={{marginTop:"10px"}}>
                             У наших продуктов просто потрясающая арома отдача. Ведь мы отбираем только самые необычные и многосложные ароматы, которые интересно раскрываются при использовании.
                         </p>
@@ -79,9 +86,13 @@ const Base = observer(() => {
                         Наш адрес: Москва, ул. Московская, 6 к1
                         </p>
                     </text>
+                    <Row className="justify-content-md-center align-items-center" style={{paddingTop:"8%"}}>
+                    <Link to={CATALOG_ROUTE} style={{paddingRight:"23%"}}><button className="brown-button" style={{width:"146%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>Смотреть каталог</button></Link>
+                    </Row>
                 </Col>
-                <Col ms={3} className="justify-content-md-center">
+                <Col className="col_c justify-content-md-center align-items-center">
                     <img
+                        style={{paddingLeft:"20%"}}
                         src= {ffth}
                         alt={ffth}
                         className="img_base1"
@@ -149,8 +160,12 @@ const Base = observer(() => {
                 </Row>
             </Row>
             <Row className="justify-content-md-center">
-                <text className="text-base">Популярное</text>
-                <ProductList></ProductList>
+                <Row><text className="header-base0">Популярное</text></Row>
+                <Link to={CATALOG_ROUTE}>
+                    <button className="brown-button" style={{width:"146%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                        Смотреть каталог
+                    </button>
+                </Link>
             </Row>
         </Container>
     );

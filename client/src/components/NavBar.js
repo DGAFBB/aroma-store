@@ -9,7 +9,6 @@ import {
     BASKET_ROUTE,
     CATALOG_ROUTE,
     CONTACTS_ROUTE,
-    DELIVERY_ROUTE, FAVOR_ROUTE,
     LOGIN_ROUTE
 } from "../utils/consts";
 import {observer} from "mobx-react-lite";
@@ -34,7 +33,6 @@ const NavBar = observer(() => {
         <Navbar>
             <Container className="navbar">
                     <NavLink style={{color:'#370601'}} onClick={() => navigate(CATALOG_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CATALOG_ROUTE} activeClassName='active'>Каталог</NavLink>
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(DELIVERY_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={DELIVERY_ROUTE} activeClassName='active'>Доставка</NavLink>
                     <NavLink style={{color:'#370601'}} onClick={() => navigate(CONTACTS_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={CONTACTS_ROUTE} activeClassName='active'>Контакты</NavLink>
 
                 <Navbar.Brand onClick={() => navigate(BASE_ROUTE)} className="log">
@@ -45,8 +43,7 @@ const NavBar = observer(() => {
                     </NavLink>
                 </Navbar.Brand>
 
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(FAVOR_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={FAVOR_ROUTE} activeClassName='active'>Избранное</NavLink>
-                    <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={BASKET_ROUTE} activeClassName='active'>Корзина</NavLink>
+                   <NavLink style={{color:'#370601'}} onClick={() => navigate(BASKET_ROUTE)} className="navbar-light navbar-brand navbar-mar" to={BASKET_ROUTE} activeClassName='active'>Корзина</NavLink>
                     {user.isAuth ?
                         <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
                             <NavLink

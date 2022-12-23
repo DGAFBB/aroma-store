@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import {Form, Button} from "react-bootstrap";
 import {createVolm} from "../../http/deviceAPI";
 
-const CreateVolm = ({show, onHide}) => {
+const CreatePrice = ({show, onHide}) => {
     const [value, setValue] = useState('')
 
     const addVolm = () => {
@@ -41,4 +41,4 @@ const CreateVolm = ({show, onHide}) => {
     );
 };
 
-export default CreateVolm;
+export default CreatePrice;

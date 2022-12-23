@@ -8,6 +8,16 @@
 
     color: #E8E0DA;
 }
+.header-base0{
+    font-family: 'Rozovii Chulok';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 88px;
+    /* identical to box height */
+
+    color: #5D4037;
+}
 .text-base{
     font-family: 'Rozovii Chulok';
     font-style: normal;

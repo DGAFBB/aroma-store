@@ -29,23 +29,27 @@ const Contacts = () => {
                         </p>
                     </text>
                     <div style={{paddingTop:"3%"}}>
-                        <img
-                            href="https://vk.com/litarchive"
-                            src={VK}
-                            alt={VK}
-                        />
-                        <img
-                            href="https://web.telegram.org/z/#-1231704267"
-                            src={Tg}
-                            alt={Tg}
-                            style={{paddingLeft:"5%"}}
-                        />
-                        <img
-                            href="https://www.instagram.com/litarchive/"
-                            src={inst}
-                            alt={inst}
-                            style={{paddingLeft:"5%"}}
-                        />
+                        <a href="https://vk.com/litarchive" target='_blank' className='nav-link d-inline' rel="noopener noreferrer">
+                            <img
+                                href="https://vk.com/litarchive"
+                                src={VK}
+                                alt={VK}
+                            />
+                        </a>
+                        <a href="https://web.telegram.org/z/#-1231704267" target='_blank' className='nav-link d-inline' rel="noopener noreferrer">
+                            <img
+                                href="https://web.telegram.org/z/#-1231704267"
+                                src={Tg}
+                                alt={Tg}
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/litarchive/" target='_blank' className='nav-link d-inline' rel="noopener noreferrer">
+                            <img
+                                href="https://www.instagram.com/litarchive/"
+                                src={inst}
+                                alt={inst}
+                            />
+                        </a>
                     </div>
                 </Col>
                 <Col>
