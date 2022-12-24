@@ -7,6 +7,9 @@
 
     text-transform: uppercase;
 }
+.active1 {
+    font-weight: bold;
+}
 .header-base{
     font-family: 'Rozovii Chulok';
     font-style: normal;

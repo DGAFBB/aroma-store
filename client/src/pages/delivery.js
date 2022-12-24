@@ -27,20 +27,20 @@ const Delivery = observer( () => {
                    <text className="reg-head">Ваш город </text> <p/>
                     <div>
                         <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="Москва и МО" />
-                        <label>Москва и МО</label>
+                        <label className="heading3">Москва и МО</label>
                     </div>
                     <div>
                         <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="Москва и МО" />
-                        <label>Москва и МО</label>
+                        <label className="heading3">Другие города РФ</label>
                     </div>
                     <p/><text className="reg-head">Способы доствки</text>
                     <div>
                         <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="Москва и МО" />
-                        <label>Москва и МО</label>
+                        <label className="heading3">Курьером</label>
                     </div>
                     <div>
                         <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="Москва и МО" />
-                        <label>Москва и МО</label>
+                        <label className="heading3">Самовывоз</label>
                     </div>
                 </Col>
                 <Col>

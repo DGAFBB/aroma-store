@@ -15,25 +15,24 @@ const AdminNavBar = observer( () => {
     const navigate = useNavigate()
     return (
         <Container fluid>
-            <Row className="admin_nav" style={{paddingLeft:"5%"}}>
+            <Row className="admin_nav" style={{paddingLeft:"8%", paddingTop:"1%", paddingBottom:"1%"}}>
                 <Col>
                     <Row>
-                        <Nav style={{color:'#370601'}} >
+                        <Nav style={{color:'#370601', paddingRight:"5%"}} >
                             <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_CATALOG_ROUTE} activeClassName='active'>Товары</NavLink>
                         </Nav>
-                        <Nav style={{color:'#370601'}} >
+                        <Nav style={{color:'#370601', paddingRight:"5%"}} >
                             <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_DELIVERIES_ROUTE} activeClassName='active'>Заказы</NavLink>
                         </Nav>
-                        <Nav style={{color:'#370601'}} >
+                        <Nav style={{color:'#370601', paddingRight:"5%"}} >
                             <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_GUESTS_PANEL_ROUTE} activeClassName='active'>Пользователи</NavLink>
                         </Nav>
-                        <Nav style={{color:'#370601'}} >
+                        <Nav style={{color:'#370601', paddingRight:"5%"}} >
                             <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_ACCOUNT_ROUTE} activeClassName='active'>Профиль</NavLink>
                         </Nav>
                     </Row>
                 </Col>
                 <Col>
-
                 </Col>
             </Row>
         </Container>

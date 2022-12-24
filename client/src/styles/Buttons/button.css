@@ -8,8 +8,8 @@
     background: #5D4037;
     border: 1px solid #5D4037;
     border-radius: 0px ;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .brown-button:focus{
     font-family: 'PT Astra Serif', serif;
@@ -36,6 +36,8 @@
     border: 1px solid #EDE6E1;
     background: #E8E0DA;
     margin-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
 }
 .milk-button_img{
@@ -61,6 +63,20 @@
     line-height: 21px;
     /* identical to box height */
     border: 1px solid #5D4037;
+    background: transparent;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.transparent-button2{
+    font-family: 'PT Astra Serif', serif;
+    font-color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid transparent;
     background: transparent;
     margin-left: 1%;
     padding-bottom: 2%;

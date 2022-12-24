@@ -23,29 +23,39 @@ import {
     GUEST_ROUTE,
     ABOUT_ROUTE,
     ADMIN_CATALOG_ROUTE,
-    ADMIN_ACCOUNT_ROUTE, ADMIN_DELIVERIES_ROUTE, ADMIN_GUESTS_PANEL_ROUTE
+    ADMIN_ACCOUNT_ROUTE, ADMIN_DELIVERIES_ROUTE, ADMIN_GUESTS_PANEL_ROUTE, ORDER_ROUTE
 } from "./utils/consts";
 import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
 import Contacts from "./pages/contacts";
+import Order from "./pages/order";
 
 export const authAdminRoutes = [
-    // {
-    //     path: ADMIN_ROUTE,
-    //     Component: Admin_account
-    // },
+    {
+        path: ADMIN_ROUTE,
+        Component: Admin_account
+    },
 ]
 export const authGuestRoutes =[
     {
         path: GUEST_ROUTE + PERSONAL_ACCOUNT_ROUTE,
         Component: Personal_account
     },
+
 ]
 
 export const publicRoutes = [
     {
         path: BASE_ROUTE,
         Component: Base
+    },
+    {
+        path: PERSONAL_ACCOUNT_ROUTE,
+        Component: Personal_account
+    },
+    {
+        path: ORDER_ROUTE,
+        Component: Order
     },
     {
         path: ABOUT_ROUTE,

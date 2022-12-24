@@ -19,6 +19,26 @@
 .log-form:focus::-moz-placeholder          {color: transparent}
 .log-form:focus:-moz-placeholder           {color: transparent}
 .log-form:focus:-ms-input-placeholder      {color: transparent}
+.log-form2{
+    background: transparent;
+    width: 100%;
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #370601;
+    border-bottom: 1px solid #5D4037;
+    padding-top: 5%;
+}
+.log-form2::-webkit-input-placeholder {color:#370601;}
+.log-form2::-moz-placeholder          {color:#370601;}/* Firefox 19+ */
+.log-form2:-moz-placeholder           {color:#370601;}/* Firefox 18- */
+.log-form2:-ms-input-placeholder      {color:#370601;}
+.log-form2:focus::-webkit-input-placeholder {color: transparent}
+.log-form2:focus::-moz-placeholder          {color: transparent}
+.log-form2:focus:-moz-placeholder           {color: transparent}
+.log-form2:focus:-ms-input-placeholder      {color: transparent}
 .check-form{
     font-family: 'PT Astra Serif';
     font-style: normal;

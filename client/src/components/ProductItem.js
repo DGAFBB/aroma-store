@@ -21,7 +21,6 @@ const ProductItem = ({product}) => {
             <Col>
                 <Row>{product.title}</Row>
                 <Row> {product.description} </Row>
-                <Row> {product.price} </Row>
             </Col>
 
         </Row>

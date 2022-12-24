@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 import {FAVOR_ROUTE, ORDER_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
 import Guest_NavBar from "../components/Guest_NavBar";
 
-const Favor = () => {
+
+const Order = () => {
     return (
         <Container>
             <Col>
@@ -19,4 +20,4 @@ const Favor = () => {
     );
 };
 
-export default Favor;
+export default Order;

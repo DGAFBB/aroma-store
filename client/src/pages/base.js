@@ -19,7 +19,7 @@ import * as PropTypes from "prop-types";
 import us_product from "../assets/us_product.svg"
 import ProductList from "../components/ProductList";
 import {Link} from "react-router-dom";
-import {ADMIN_CATALOG_ROUTE, CATALOG_ROUTE} from "../utils/consts";
+import {ADMIN_CATALOG_ROUTE, CATALOG_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
 import ProductListVar from "../components/productlistvar";
 import ProductItem from "../components/ProductItem";
 import ProductItemVar from "../components/productitemvar";
@@ -175,6 +175,12 @@ const Base = observer(() => {
                     Админская часть
                 </button>
             </Link></Row>
+            <Row style={{ paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center">
+                <Link to={PERSONAL_ACCOUNT_ROUTE}>
+                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                        ЛК видимый
+                    </button>
+                </Link></Row>
         </Container>
     );
 });
