@@ -5,7 +5,7 @@ import Admin_NavBar from "../components/Admin_NavBar";
 const AdminCatalog = () => {
     return (
         <Container fluid style={{paddingRight:"0%", paddingLeft:"0%"}}>
-            <Admin_NavBar></Admin_NavBar>
+            <Admin_NavBar/>
             <Row style={{width:"90%"}} className="justify-content-md-center align-items-center">
                 <table>
                     <thead>

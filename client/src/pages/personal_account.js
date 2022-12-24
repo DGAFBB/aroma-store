@@ -37,7 +37,7 @@ const PersonalAccount = () => {
                     </Row>
                     <input type="email" className="log-form2" placeholder="E-mail" style={{marginTop:"6%"}}>
                     </input>
-                    <input className="log-form2" type="number" placeholder="Контактный тедефон" style={{marginTop:"6%"}}>
+                    <input className="log-form2" type="text" placeholder="Контактный тедефон" style={{marginTop:"6%"}}>
                     </input>
                     <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Сохранить</button>
                     <button className="transparent-button2" style={{width:"35%", marginTop:"17%", marginBottom:"25%"}}>Выйти</button>
