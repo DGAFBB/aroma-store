@@ -1,7 +1,5 @@
 import React from 'react';
-import {Card, Col, Container, Nav, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import {ABOUT_ROUTE, FAVOR_ROUTE, ORDER_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
+import {Col, Container, Row} from "react-bootstrap";
 import "../styles/NavBar/NavBar.css"
 import Guest_NavBar from "../components/Guest_NavBar";
 import "../styles/CheckBox/Ratio.css"

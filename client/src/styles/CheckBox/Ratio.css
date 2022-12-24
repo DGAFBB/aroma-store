@@ -16,9 +16,9 @@
     left: 0;
     width: 22px;
     height: 22px;
-    border: 1px solid #CDD1DA;
+    border: 1px solid #370601;
     border-radius: 50%;
-    background: #FFF;
+    background: transparent;
 }
 .radio + label:after {
     content: '';
