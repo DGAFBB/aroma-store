@@ -35,7 +35,7 @@ const AdminNavBar = observer( () => {
                 </Col>
                 <Col md={2} style={{marginRight:"7%", marginLeft:0}}>
                     <Row>
-                        <input style={{width:"85%", paddingTop:"2%", paddingBottom:"2%"}} type="search" placeholder="Поиск" className="log-form3"/>
+                        <input style={{width:"85%", paddingTop:"2%", paddingBottom:"2%"}} type="search" placeholder="Поиск" className="log-form4"/>
                         <button style={{width:"15%"}} className="log-form3 justify-content-md-center">
                             <img
                                 src={search1}

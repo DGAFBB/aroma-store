@@ -58,6 +58,26 @@
 .log-form3:focus::-moz-placeholder          {color: transparent}
 .log-form3:focus:-moz-placeholder           {color: transparent}
 .log-form3:focus:-ms-input-placeholder      {color: transparent}
+.log-form4{
+    background: transparent;
+    width: 100%;
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-indent: 15px;
+    line-height: 21px;
+    color: #370601;
+    border: 1px solid #5D4037;
+}
+.log-form4::-webkit-input-placeholder {color:#370601;}
+.log-form4::-moz-placeholder          {color:#370601;}/* Firefox 19+ */
+.log-form4:-moz-placeholder           {color:#370601;}/* Firefox 18- */
+.log-form4:-ms-input-placeholder      {color:#370601;}
+.log-form4:focus::-webkit-input-placeholder {color: transparent}
+.log-form4:focus::-moz-placeholder          {color: transparent}
+.log-form4:focus:-moz-placeholder           {color: transparent}
+.log-form4:focus:-ms-input-placeholder      {color: transparent}
 .check-form{
     font-family: 'PT Astra Serif';
     font-style: normal;

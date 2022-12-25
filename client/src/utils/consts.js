@@ -12,6 +12,7 @@ export const PERSONAL_ACCOUNT_ROUTE = '/personal_account'
 export const GUEST_ROUTE ='/guest'
 export const ABOUT_ROUTE ='/about'
 export const ADMIN_ACCOUNT_ROUTE = "/admin_account"
+export const ADMIN_ACCOUNT_REG_ROUTE = "/admin_account_reg"
 export const ADMIN_CATALOG_ROUTE = "/admin_catalog"
 export const ADMIN_DELIVERIES_ROUTE = "/admin_deliveries"
 export const ADMIN_GUESTS_PANEL_ROUTE = "/admin_guests_panel"

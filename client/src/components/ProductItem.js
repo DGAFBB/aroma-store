@@ -10,8 +10,9 @@ const ProductItem = ({product}) => {
     const rating = require('react-rating');
     const path = `${product.id}.png`
     return (
-        <Row
-            className="parkItem"
+        <card>
+        <Row md={3} className={"mt-3"}
+            className="productItem"
             style={{ cursor: 'pointer' }}
             onClick={() => navigate(PRODUCT_ROUTE + '/' + product.id)}
         >
@@ -19,27 +20,15 @@ const ProductItem = ({product}) => {
             <Image width="100%" src={process.env.REACT_APP_API_URL + path} />
         </Col>
             <Col>
+                <div className="d-flex align-items-center">
+                <Image width={18} height={18} src={heart}/>
+                </div>
                 <Row>{product.title}</Row>
                 <Row> {product.description} </Row>
             </Col>
-
         </Row>
+        </card>
     )
-    return (
-        <Col md={3} className={"mt-3"} onClick={() => navigate(PRODUCT_ROUTE + '/' + product.id)}>
-            <Card style={{width: 150, cursor: 'pointer'}} border={"light"}>
-                <Image width={150} height={150} src={process.env.REACT_APP_API_URL + product.img}/>
-                <div className="text-black-50 mt-1 d-flex justify-content-between align-items-center">
-                    <div>...</div>
-                    <div className="d-flex align-items-center">
-                        <div>{product.rating}</div>
-                        <Image width={18} height={18} src={heart}/>
-                    </div>
-                </div>
-                <div>{product.name}</div>
-            </Card>
-        </Col>
-    );
 };
 
 export default ProductItem;
