@@ -23,8 +23,8 @@ const ProductItem = ({product}) => {
                 <div className="d-flex align-items-center">
                 <Image width={18} height={18} src={heart}/>
                 </div>
-                <Row>{product.title}</Row>
-                <Row> {product.description} </Row>
+                <Row className="heading5">{product.title}</Row>
+                <Row className="heading5_2"> {product.description} </Row>
             </Col>
         </Row>
         </card>

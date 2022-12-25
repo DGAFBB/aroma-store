@@ -18,3 +18,7 @@ export const AdminCheck = async () => {
     localStorage.setItem('token', data.token)
     return jwt_decode(data.token)
 }
+export const fetchAdmin = async (id) => {
+    const {data} = await $host.get('api/admin/' + id)
+    return data
+}
