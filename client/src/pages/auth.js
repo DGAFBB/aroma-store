@@ -64,7 +64,7 @@ const Auth = observer(() => {
                         <label className="form-check-label">
                             <input className="form-check-input check-form" type="checkbox"> Подписаться на новости и скидки</input>
                         </label>
-                        <input className="log-form" type="number"  placeholder="Контактный телефон" style={{marginTop:"2%"}}>
+                        <input className="log-form" type="tel"  placeholder="Контактный телефон" style={{marginTop:"2%"}}>
                         </input>
                         <input className="log-form" type="password"  placeholder="Придумайте пароль" style={{marginTop:"2%"}}>
                         </input>
@@ -105,7 +105,7 @@ const Auth = observer(() => {
                     </Form>
                 ) : (
                     <Form className="d-flex flex-column">
-                            <input className="log-form" type="number"  placeholder="Номер телефона" style={{marginTop:"2%"}}>
+                            <input className="log-form" type="tel"  placeholder="Номер телефона" style={{marginTop:"2%"}}>
                             </input>
                         <input className="log-form" type="password"  placeholder="Пароль" style={{marginTop:"2%"}}>
                         </input>

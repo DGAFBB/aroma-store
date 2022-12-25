@@ -35,30 +35,30 @@ SkipLink.propTypes = {
 const Base = observer(() => {
 
     return (
-        <Container fluid>
-            <Row className="justify-content-md-center row-cont2">
-                <Col md="auto">
+        <Container fluid className="justify-content-md-center">
+            <Row className="justify-content-md-center" style={{marginBottom:"5%"}}>
+                <div className="col-container">
+                <Col md="auto" style={{textAlign:"center"}} className="col11 justify-content-md-center">
                     <img
                     src= {frst}
                     alt={frst}
                     />
                 </Col>
-                <Col md="auto">
-                    <Container>
+                <Col md="auto" style={{textAlign:"center"}} className="col11 justify-content-md-center">
                     <img
                         src= {sec}
                         alt={sec}
                     />
-                    </Container>
                 </Col>
-                <Col md="auto">
+                <Col md="auto" style={{textAlign:"center"}} className="col11 justify-content-md-center">
                     <img
                     src= {thd}
                     alt={thd}
                     />
                 </Col>
+            </div>
             </Row>
-            <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center row-cont" id="about">
+            <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center" id="about">
                 <Col md="auto" className="header-base">
                 О нас
                 </Col>

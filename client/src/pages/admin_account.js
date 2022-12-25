@@ -37,7 +37,7 @@ const Admin_account = () => {
                         </input>
                         <input type="email" className="log-form2" placeholder="Должность" style={{marginTop:"6%"}}>
                         </input>
-                        <input className="log-form2" type="text" placeholder="Контактный тедефон" style={{marginTop:"6%"}}>
+                        <input className="log-form2" type="tel" placeholder="Контактный телефон" style={{marginTop:"6%"}}>
                         </input>
                         <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Сохранить</button>
                         <button className="transparent-button2" style={{width:"35%", marginTop:"17%", marginBottom:"25%"}}>Выйти</button>
