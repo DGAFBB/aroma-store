@@ -5,6 +5,8 @@ import Admin_Navigate from "../components/Admin_Navigate";
 import {observer} from "mobx-react-lite";
 import {useParams} from "react-router";
 import {fetchAdmin} from "../http/adminAPI";
+import {Link} from "react-router-dom";
+import {ADMIN_ACCOUNT_REG_ROUTE} from "../utils/consts";
 
 const AdminAccount = observer(() => {
     // const [admin, setAdmin] = useState({info: []})
@@ -31,7 +33,9 @@ const AdminAccount = observer(() => {
 
                         {/*</Row>*/}
                         <div>
+                            <Link to={ADMIN_ACCOUNT_REG_ROUTE}>
                             <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Изменить данные</button>
+                            </Link>
                             <button className="transparent-button2" style={{width:"35%", marginTop:"17%", marginBottom:"25%"}}>Выйти</button>
                         </div>
                     </card>

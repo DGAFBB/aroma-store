@@ -8,14 +8,14 @@ const PriceBar = observer( () => {
     const {product} = useContext(Context)
     return (
         <ListGroup>
-            {product.prices.map(volm =>
+            {product.prices.map(price =>
                 <ListGroup.Item
                     style={{cursor: 'pointer'}}
-                    active={volm.id === product.selectedVolm.id}
-                    onClick={() => product.setSelectedVolm(volm)}
-                    key={volm.id}
+                    active={price.id === product.selectedPrice.id}
+                    onClick={() => product.setSelectedPrice(price)}
+                    key={price.id}
                 >
-                    {volm.name}
+                    {price.name}
                 </ListGroup.Item>
             )}
         </ListGroup>

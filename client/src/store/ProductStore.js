@@ -6,10 +6,10 @@ export default class ProductStore {
         this._types = []
         this._aromas = []
         this._products = []
-        this._volms = []
+        this._prices = []
         this._selectedType = {}
         this._selectedAroma = {}
-        this._selectedVolm = {}
+        this._selectedPrice = {}
         this._page = 1
         this._totalCount = 0
         this._limit = 3
@@ -25,8 +25,8 @@ export default class ProductStore {
     setProducts(products) {
         this._products = products
     }
-    setVolms(volms) {
-        this._volms = volms
+    setPrices(prices) {
+        this._prices = prices
     }
 
     setSelectedType(type) {
@@ -37,9 +37,9 @@ export default class ProductStore {
         this.setPage(1)
         this._selectedAroma = aroma
     }
-    setSelectedVolm(volm) {
+    setSelectedPrice(price) {
         this.setPage(1)
-        this._selectedVolm = volm
+        this._selectedPrice = price
     }
     setPage(page) {
         this._page = page
@@ -57,8 +57,8 @@ export default class ProductStore {
     get products() {
         return this._products
     }
-    get volms() {
-        return this._volms
+    get prices() {
+        return this._prices
     }
     get selectedType() {
         return this._selectedType
@@ -66,8 +66,8 @@ export default class ProductStore {
     get selectedAroma() {
         return this._selectedAroma
     }
-    get selectedVolm() {
-        return this._selectedVolm
+    get selectedPrice() {
+        return this._selectedPrice
     }
     get totalCount() {
         return this._totalCount

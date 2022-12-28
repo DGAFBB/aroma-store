@@ -19,17 +19,17 @@ const AdminNavBar = observer( () => {
             <Row className="admin_nav" style={{paddingLeft:"8%", paddingTop:"1%", paddingBottom:"1%"}}>
                 <Col style={{verticalAlign:"middle"}}>
                     <Row style={{verticalAlign:"middle"}}>
-                        <Nav style={{color:'#370601', paddingRight:"8%"}} >
-                            <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_CATALOG_ROUTE} activeClassName='active'>Товары</NavLink>
+                        <Nav style={{color:'#370601', paddingRight:"8%", verticalAlign:"middle"}} >
+                            <NavLink style={{color:'#370601', verticalAlign:"middle"}} className="admin-header" to={ADMIN_CATALOG_ROUTE} activeClassName='active'>Товары</NavLink>
                         </Nav>
-                        <Nav style={{color:'#370601', paddingRight:"8%"}} >
-                            <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_DELIVERIES_ROUTE} activeClassName='active'>Заказы</NavLink>
+                        <Nav style={{color:'#370601', paddingRight:"8%", verticalAlign:"middle"}} >
+                            <NavLink style={{color:'#370601', verticalAlign:"middle"}} className="admin-header" to={ADMIN_DELIVERIES_ROUTE} activeClassName='active'>Заказы</NavLink>
                         </Nav>
-                        <Nav style={{color:'#370601', paddingRight:"8%"}} >
-                            <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_GUESTS_PANEL_ROUTE} activeClassName='active'>Пользователи</NavLink>
+                        <Nav style={{color:'#370601', paddingRight:"8%", verticalAlign:"middle"}} >
+                            <NavLink style={{color:'#370601', verticalAlign:"middle"}} className="admin-header" to={ADMIN_GUESTS_PANEL_ROUTE} activeClassName='active'>Пользователи</NavLink>
                         </Nav>
-                        <Nav style={{color:'#370601'}} >
-                            <NavLink style={{color:'#370601'}} className="admin-header" to={ADMIN_ACCOUNT_ROUTE} activeClassName='active'>Профиль</NavLink>
+                        <Nav style={{color:'#370601', verticalAlign:"middle"}} >
+                            <NavLink style={{color:'#370601', verticalAlign:"middle"}} className="admin-header" to={ADMIN_ACCOUNT_ROUTE} activeClassName='active'>Профиль</NavLink>
                         </Nav>
                     </Row>
                 </Col>

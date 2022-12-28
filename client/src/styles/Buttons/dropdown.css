@@ -1,0 +1,13 @@
+.dropdown_cat{
+    background-color: transparent;
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #5D4037;
+    border: 1px solid #370601;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container} from "react-bootstrap";
+import {Container, Dropdown, DropdownButton} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {observer} from "mobx-react-lite";
@@ -23,6 +23,7 @@ import {ADMIN_ACCOUNT_ROUTE, ADMIN_CATALOG_ROUTE, CATALOG_ROUTE, PERSONAL_ACCOUN
 import ProductListVar from "../components/productlistvar";
 import ProductItem from "../components/ProductItem";
 import ProductItemVar from "../components/productitemvar";
+import search1 from "../assets/search.svg";
 
 function SkipLink(props) {
     return null;

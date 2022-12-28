@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
 import {Form, Button} from "react-bootstrap";
-import {createVolm} from "../../http/deviceAPI";
+import {createPrice} from "../../http/productAPI";
 
 const CreatePrice = ({show, onHide}) => {
     const [value, setValue] = useState('')
 
-    const addVolm = () => {
-        createVolm({name: value}).then(data => {
+    const addPrice = () => {
+        createPrice({name: value}).then(data => {
             setValue('')
             onHide()
         })
@@ -21,7 +21,7 @@ const CreatePrice = ({show, onHide}) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Добавить тип
+                    Добавить цену
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -29,13 +29,13 @@ const CreatePrice = ({show, onHide}) => {
                     <Form.Control
                         value={value}
                         onChange={e => setValue(e.target.value)}
-                        placeholder={"Введите название типа"}
+                        placeholder={"Введите"}
                     />
                 </Form>
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={addVolm}>Добавить</Button>
+                <Button variant="outline-success" onClick={addPrice}>Добавить</Button>
             </Modal.Footer>
         </Modal>
     );

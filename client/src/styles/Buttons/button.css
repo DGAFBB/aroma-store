@@ -11,20 +11,6 @@
     padding-top: 2%;
     padding-bottom: 2%;
 }
-.brown-button:focus{
-    font-family: 'PT Astra Serif', serif;
-    color: #5D4037;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    background: #E8E0DA;
-    border: 1px solid #5D4037;
-    border-radius: 0px ;
-    box-shadow: rgba(255,255,255,0);
-}
-
 .milk-button{
     font-family: 'PT Astra Serif', serif;
     font-color: #5D4037;

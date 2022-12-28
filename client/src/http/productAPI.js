@@ -10,12 +10,12 @@ export const fetchTypes = async () => {
     return data
 }
 
-export const createVolm = async (volm) => {
+export const createPrice = async (volm) => {
     const {data} = await $authHost.post('api/volm', volm)
     return data
 }
 
-export const fetchTVolms = async () => {
+export const fetchTPrices = async () => {
     const {data} = await $host.get('api/volm')
     return data
 }
