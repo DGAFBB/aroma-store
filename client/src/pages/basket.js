@@ -4,6 +4,7 @@ import "../styles/fonts/fonts.css"
 import "../styles/Buttons/button.css"
 import {Link} from "react-router-dom";
 import {DELIVERY_ROUTE} from "../utils/consts";
+import ProductListBasket from "../components/ProductListBasket";
 
 const Basket = () => {
     return (
@@ -12,7 +13,7 @@ const Basket = () => {
                 <text style={{marginTop:"4%", marginBottom:"7%", marginRight:"auto", marginLeft:0}} className="heading2">Оформление заказа</text>
             </Row>
             <Row>
-
+                <ProductListBasket/>
             </Row>
             <Row>
                 <Link to={DELIVERY_ROUTE} style={{marginTop:"5%", marginBottom:"7%", marginRight:0, marginLeft:"auto"}}>

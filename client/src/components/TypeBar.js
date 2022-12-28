@@ -2,22 +2,25 @@ import React, {useContext} from 'react';
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import ListGroup from "react-bootstrap/ListGroup";
+import {Col, Row} from "react-bootstrap";
 
 const TypeBar = observer(() => {
     const {product} = useContext(Context)
     return (
-        <ListGroup>
+        <Row style={{backgroundColor:"#5D4037"}} className="justify-content-around">
+            <Col>
             {product.types.map(type =>
-                <ListGroup.Item
+                <Col.Item
                     style={{cursor: 'pointer'}}
                     active={type.id === product.selectedType.id}
                     onClick={() => product.setSelectedType(type)}
                     key={type.id}
                 >
-                    {type.name}
-                </ListGroup.Item>
+                   <text className="heading2">{type.name}</text>
+                </Col.Item>
             )}
-        </ListGroup>
+            </Col>
+        </Row>
     );
 });
 

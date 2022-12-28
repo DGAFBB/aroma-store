@@ -20,10 +20,9 @@ import us_product from "../assets/us_product.svg"
 import ProductList from "../components/ProductList";
 import {Link} from "react-router-dom";
 import {ADMIN_ACCOUNT_ROUTE, ADMIN_CATALOG_ROUTE, CATALOG_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
-import ProductListVar from "../components/productlistvar";
 import ProductItem from "../components/ProductItem";
-import ProductItemVar from "../components/productitemvar";
 import search1 from "../assets/search.svg";
+import ProductListPopular from "../components/productlistPopular";
 
 function SkipLink(props) {
     return null;
@@ -160,10 +159,13 @@ const Base = observer(() => {
                     </Col>
                 </Row>
             </Row>
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-md-center" style={{paddingTop:"3%"}}>
                     <text className="header-base0">Популярное</text>
                 </Row>
-                <Row style={{paddingTop:"5%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
+            {/*<Row className="justify-content-md-center" style={{paddingTop:"3%"}}>*/}
+            {/*    <ProductListPopular/>*/}
+            {/*</Row>*/}
+                <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
                     <Link to={CATALOG_ROUTE}>
                     <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                         Смотреть каталог

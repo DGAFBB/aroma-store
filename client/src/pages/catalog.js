@@ -14,11 +14,9 @@ import search1 from "../assets/search.svg";
 
 const Catalog = () => {
     return (
-        <Container>
+        <Container fluid className="justify-content-md-center">
+            <TypeBar/>
             <Row className="mt-2">
-                <Row md={3}>
-                    <TypeBar/>
-                </Row>
                 <Col md={4} style={{marginRight:0,  marginLeft:"auto", marginBottom:"3%"}}>
                     <Row>
                         <input style={{width:"50%", paddingTop:"2%", paddingBottom:"2%", paddingRight:"2%"}} type="search" placeholder="Поиск" className="log-form4"/>

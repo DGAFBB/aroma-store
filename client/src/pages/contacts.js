@@ -14,14 +14,14 @@ const Contacts = () => {
             <Row>
                 <Col>
                     <text >
-                        <p className="heading2">По общим вопросам и заказам:</p>
+                        <p className="heading3">По общим вопросам и заказам:</p>
                         <p className="heading6">
                         harmony@gmail.com
                         </p>
                         <p className="heading5">
                         +7 (988) 680 42 22
                         </p>
-                        <p className="heading2" style={{paddingTop:"3%"}}>
+                        <p className="heading3" style={{paddingTop:"3%"}}>
                         По вопросам сотрудничества:
                         </p>
                         <p className="heading6">
@@ -54,7 +54,7 @@ const Contacts = () => {
                 </Col>
                 <Col>
                     <card style={{ width: "30%"}}>
-                        <text className="heading2" >
+                        <text className="heading3" >
                             Остались вопросы?
                         </text>
                         <input className="log-form" type="text"  placeholder="Ваше имя" style={{marginTop:"2%"}}>
