@@ -27,3 +27,6 @@
     padding-left: 0;
     padding-right: 0;
 }
+.row-border{
+    border-bottom:1px solid #EDE6E1;
+}
