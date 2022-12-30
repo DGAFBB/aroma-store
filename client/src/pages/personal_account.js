@@ -13,7 +13,7 @@ const PersonalAccount = () => {
 
         <Container>
             <Row>
-            <Col md={4} className="justify-content-md-center">
+            <Col md={3} className="justify-content-md-center">
                 <Guest_NavBar></Guest_NavBar>
             </Col>
             <Col md={5} className="justify-content-md-center">

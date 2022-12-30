@@ -8,10 +8,10 @@ const PersonalAccountReg = () => {
     return (
         <Container>
             <Row>
-                <Col md={4} className="justify-content-md-center">
+                <Col md={3} className="justify-content-md-center">
                     <Guest_NavBar></Guest_NavBar>
                 </Col>
-                <Col md={4}>
+                <Col md={5}>
                     <card style={{ width: "30%"}}>
                         <input className="log-form2" type="text"  placeholder="Имя">
                         </input>

@@ -38,12 +38,16 @@ const ProductItemFavorite = ({product}) => {
                             </div>
                         </div>
                     </Row>
-                    <Row >
-                        <Col md={9}>
+                    <Row style={{width:"100%"}}>
+                        <Col style={{width:"100%"}}>
                             <Row className="heading5" style={{paddingTop:"20%"}}>Yfbvtyjdfybt</Row>
                             <Row className="heading5_2" style={{paddingTop:"5%"}}> Jgbcfybt njdfhf </Row>
-                            <Row className="heading5" style={{paddingTop:"10%"}}>1800 ₽</Row>
                         </Col>
+                    </Row>
+                    <Row style={{paddingTop:"20%"}} >
+                    <div style={{width:"100%"}} className="align-items-center">
+                        <button style={{width:"100%"}} className="transparent-button">Добавить в корзину</button>
+                    </div>
                     </Row>
                 </Col>
             </card>
