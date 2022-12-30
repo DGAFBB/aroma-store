@@ -13,14 +13,6 @@ const ProductItemFavorite = ({product}) => {
     // const navigate = useNavigate();
     // const rating = require('react-rating');
     // const path = `${product.id}.png`
-    //     function chg(id){
-    //     if (document.getElementById(id).src.indexOf("heart.svg")>0){
-    //     document.getElementById(id).src="heart_active.svg"
-    //     }
-    //     else{
-    //     document.getElementById(id).src="heart.svg"
-    //     }
-    //     }
 
     return (
         <Link to={PRODUCT_ROUTE} style={{ paddingBottom:"5%"}}>
