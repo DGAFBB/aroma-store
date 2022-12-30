@@ -9,6 +9,7 @@ export const DELIVERY_ROUTE = '/delivery'
 export const CONTACTS_ROUTE = '/contacts'
 export const PRODUCT_ROUTE = '/product'
 export const PERSONAL_ACCOUNT_ROUTE = '/personal_account'
+export const PERSONAL_ACCOUNT_REG_ROUTE = '/personal_account_reg'
 export const GUEST_ROUTE ='/guest'
 export const ABOUT_ROUTE ='/about'
 export const ADMIN_ACCOUNT_ROUTE = "/admin_account"

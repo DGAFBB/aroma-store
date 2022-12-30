@@ -8,18 +8,18 @@ const TypeBar = observer(() => {
     const {product} = useContext(Context)
     return (
         <Row style={{backgroundColor:"#5D4037", paddingTop:"2%", paddingBottom:"2%"}} className="justify-content-md-center">
-            <Row style={{width:"50%", left:"25%"}} className="justify-content-center row-border">
-                <Col style={{width:"25%",left:"5%"}}>
-                    <text className="heading2" >ghnbbcvdfyh</text>
+            <Row style={{width:"50%"}} className="justify-content-center row-border">
+                <Col>
+                    <div className="heading2" style={{textAlign:"center"}} >ghnbbcvdfyh</div>
                 </Col>
-                <Col >
-                    <text className="heading2">ghnbbcvdfyh</text>
+                <Col>
+                    <div className="heading2" style={{textAlign:"center"}} >ghnbbcvdfyh</div>
                 </Col>
-                <Col >
-                    <text className="heading2">ghnbbcvdfyh</text>
+                <Col>
+                    <div className="heading2" style={{textAlign:"center"}} >ghnbbcvdfyh</div>
                 </Col>
-                <Col >
-                    <text className="heading2">ghnbbcvdfyh</text>
+                <Col>
+                    <div className="heading2" style={{textAlign:"center"}} >ghnbbcvdfyh</div>
                 </Col>
                 {/*{product.types.map(type =>*/}
                 {/*    <Col.Item*/}
@@ -28,7 +28,7 @@ const TypeBar = observer(() => {
                 {/*        onClick={() => product.setSelectedType(type)}*/}
                 {/*        key={type.id}*/}
                 {/*    >*/}
-                {/*       <text className="heading2">{type.name}</text>*/}
+                {/*       <div className="heading2" style={{textAlign:"center"}}>{type.name}</text>*/}
                 {/*    </Col.Item>*/}
                 {/*)}*/}
             </Row>

@@ -8,7 +8,8 @@ import Admin_account from "./pages/admin_account";
 import Admin_account_reg from "./pages/admin_account_reg";
 import Admin_catalog from "./pages/admin_catalog";
 import Admin_deliveries from "./pages/admin_deliveries";
-import Admin_guests from "./pages/admin_guests_panel"
+import Admin_guests from "./pages/admin_guests_panel";
+import Personal_account_reg from "./pages/personal_account_reg";
 import {
     BASE_ROUTE,
     BASKET_ROUTE,
@@ -24,7 +25,12 @@ import {
     GUEST_ROUTE,
     ABOUT_ROUTE,
     ADMIN_CATALOG_ROUTE,
-    ADMIN_ACCOUNT_ROUTE, ADMIN_DELIVERIES_ROUTE, ADMIN_GUESTS_PANEL_ROUTE, ORDER_ROUTE, ADMIN_ACCOUNT_REG_ROUTE
+    ADMIN_ACCOUNT_ROUTE,
+    ADMIN_DELIVERIES_ROUTE,
+    ADMIN_GUESTS_PANEL_ROUTE,
+    ORDER_ROUTE,
+    ADMIN_ACCOUNT_REG_ROUTE,
+    PERSONAL_ACCOUNT_REG_ROUTE
 } from "./utils/consts";
 import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
@@ -82,8 +88,12 @@ export const publicRoutes = [
         path: CATALOG_ROUTE,
         Component: Catalog
     },
+    // {
+    //     path:PRODUCT_ROUTE + '/:id',
+    //     Component: Product
+    // },
     {
-        path:PRODUCT_ROUTE + '/:id',
+        path:PRODUCT_ROUTE ,
         Component: Product
     },
     {
@@ -105,6 +115,10 @@ export const publicRoutes = [
     {
         path: ADMIN_ACCOUNT_REG_ROUTE,
         Component: Admin_account_reg
+    },
+    {
+        path: PERSONAL_ACCOUNT_REG_ROUTE,
+        Component: Personal_account_reg
     },
     {
         path: ADMIN_DELIVERIES_ROUTE,

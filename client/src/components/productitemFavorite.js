@@ -7,11 +7,21 @@ import {PRODUCT_ROUTE} from '../utils/consts';
 import product1 from "../assets/product1.png"
 import auth from "../pages/auth";
 import "../styles/cards/card.css"
+import heart_active from "../assets/heart_active.svg"
 
 const ProductItemFavorite = ({product}) => {
     // const navigate = useNavigate();
     // const rating = require('react-rating');
     // const path = `${product.id}.png`
+    //     function chg(id){
+    //     if (document.getElementById(id).src.indexOf("heart.svg")>0){
+    //     document.getElementById(id).src="heart_active.svg"
+    //     }
+    //     else{
+    //     document.getElementById(id).src="heart.svg"
+    //     }
+    //     }
+
     return (
         <Link to={PRODUCT_ROUTE} style={{ paddingBottom:"5%"}}>
             <card style={{width:"100%"}} className="justify-content-md-center flex-fill">
@@ -24,6 +34,7 @@ const ProductItemFavorite = ({product}) => {
                             <Image width="98%" height="98%" src={product1} style={{paddingTop:"2%", paddingLeft:"2%"}}/>
                             <div>
                                 <img width="10%" height="10%" src={heart} alt={heart} style={{position:"absolute", top:"3%",  right:"8%"}}/>
+                                <img width="10%" height="10%" src={heart_active} alt={heart_active} style={{position:"absolute", top:"3%",  right:"8%"}}/>
                             </div>
                         </div>
                     </Row>

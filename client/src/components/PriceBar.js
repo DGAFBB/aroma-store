@@ -8,7 +8,7 @@ const PriceBar = observer( () => {
     const {product} = useContext(Context)
     return (
         <ListGroup>
-            {product.prices.map(price =>
+            {product.prices.map((price) =>
                 <ListGroup.Item
                     style={{cursor: 'pointer'}}
                     active={price.id === product.selectedPrice.id}

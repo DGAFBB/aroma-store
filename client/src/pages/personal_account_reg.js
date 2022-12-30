@@ -1,25 +1,25 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import Admin_NavBar from "../components/Admin_NavBar";
-import Admin_Navigate from "../components/Admin_Navigate";
+import Guest_NavBar from "../components/Guest_NavBar";
 import {BASE_ROUTE} from "../utils/consts";
 import {Link} from "react-router-dom";
 
-const Admin_account_reg = () => {
+const PersonalAccountReg = () => {
     return (
-        <Container fluid className="justify-content-md-center">
-            <Admin_NavBar/>
-            <Row className="justify-content-md-center" style={{paddingTop:"5%", paddingRight:"15%"}}>
-                <Col md={3} className="justify-content-md-center">
-                    <Admin_Navigate/>
+        <Container>
+            <Row>
+                <Col md={4} className="justify-content-md-center">
+                    <Guest_NavBar></Guest_NavBar>
                 </Col>
-                <Col md={5} className="justify-content-md-center">
-                    <card>
+                <Col md={4}>
+                    <card style={{ width: "30%"}}>
                         <input className="log-form2" type="text"  placeholder="Имя">
                         </input>
                         <input className="log-form2" type="text"  placeholder="Фамилия" style={{marginTop:"6%"}}>
                         </input>
                         <input className="log-form2" type="text"  placeholder="Отчество" style={{marginTop:"6%"}}>
+                        </input>
+                        <input className="log-form2" type="date"  placeholder="Дата рождения" style={{marginTop:"6%"}}>
                         </input>
                         <Row style={{marginTop:"8%"}} className="justify-content-between">
                             <div>
@@ -35,11 +35,9 @@ const Admin_account_reg = () => {
                                 <label className="heading3">Не указан</label>
                             </div>
                         </Row>
-                        <input className="log-form2" type="date"  placeholder="Дата рождения" style={{marginTop:"6%"}}>
+                        <input type="email" className="log-form2" placeholder="E-mail" style={{marginTop:"6%"}}>
                         </input>
-                        <input type="email" className="log-form2" placeholder="Должность" style={{marginTop:"6%"}}>
-                        </input>
-                        <input className="log-form2" type="tel" placeholder="Контактный телефон" style={{marginTop:"6%"}}>
+                        <input className="log-form2" type="text" placeholder="Контактный тедефон" style={{marginTop:"6%"}}>
                         </input>
                         <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Сохранить</button>
                         <Link to={BASE_ROUTE}>
@@ -52,4 +50,4 @@ const Admin_account_reg = () => {
     );
 };
 
-export default Admin_account_reg;
+export default PersonalAccountReg;

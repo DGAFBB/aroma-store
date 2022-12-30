@@ -6,7 +6,7 @@ import {observer} from "mobx-react-lite";
 import {useParams} from "react-router";
 import {fetchAdmin} from "../http/adminAPI";
 import {Link} from "react-router-dom";
-import {ADMIN_ACCOUNT_REG_ROUTE} from "../utils/consts";
+import {ADMIN_ACCOUNT_REG_ROUTE, BASE_ROUTE} from "../utils/consts";
 
 const AdminAccount = observer(() => {
     // const [admin, setAdmin] = useState({info: []})
@@ -36,7 +36,9 @@ const AdminAccount = observer(() => {
                             <Link to={ADMIN_ACCOUNT_REG_ROUTE}>
                             <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Изменить данные</button>
                             </Link>
+                            <Link to={BASE_ROUTE}>
                             <button className="transparent-button2" style={{width:"35%", marginTop:"17%", marginBottom:"25%"}}>Выйти</button>
+                            </Link>
                         </div>
                     </card>
                 </Col>
