@@ -35,7 +35,7 @@ SkipLink.propTypes = {
 const Base = observer(() => {
 
     return (
-        <Container fluid className="justify-content-md-center">
+        <Container fluid className="justify-content-md-center align-items-center">
             <Row className="justify-content-md-center" style={{marginBottom:"5%"}}>
                 <div className="col-container">
                 <Col md="auto" style={{textAlign:"center"}} className="col11 justify-content-md-center">
@@ -56,7 +56,7 @@ const Base = observer(() => {
                     alt={thd}
                     />
                 </Col>
-            </div>
+                </div>
             </Row>
             <Row style={{backgroundColor:"#5D4037"}} className="justify-content-md-center" id="about">
                 <Col md="auto" className="header-base">
@@ -110,27 +110,6 @@ const Base = observer(() => {
                     className="img_base1"
                 />
             </Row>
-                {/*<Col ms={3}>*/}
-                {/*    <img*/}
-                {/*        src= {product1}*/}
-                {/*        alt={product1}*/}
-                {/*        className="img_base1"*/}
-                {/*    />*/}
-                {/*</Col>*/}
-                {/*<Col ms={3}>*/}
-                {/*    <img*/}
-                {/*        src= {product2}*/}
-                {/*        alt={product2}*/}
-                {/*        className="img_base1"*/}
-                {/*    />*/}
-                {/*</Col>*/}
-                {/*<Col ms={3}>*/}
-                {/*    <img*/}
-                {/*        src= {product3}*/}
-                {/*        alt={product3}*/}
-                {/*        className="img_base1"*/}
-                {/*    />*/}
-                {/*</Col>*/}
             <Row className="justify-content-md-center row-cont">
                 <Row style={{width:"77%", paddingBottom:"5%"}}>
                     <Col>
@@ -159,13 +138,13 @@ const Base = observer(() => {
                     </Col>
                 </Row>
             </Row>
-                <Row className="justify-content-md-center" style={{paddingTop:"3%"}}>
+            <Row className="justify-content-md-center" style={{paddingTop:"3%"}}>
                     <text className="header-base0">Популярное</text>
                 </Row>
-            {/*<Row className="justify-content-md-center" style={{paddingTop:"3%"}}>*/}
-            {/*    <ProductListPopular/>*/}
-            {/*</Row>*/}
-                <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
+            <Row className="justify-content-md-center align-items-center" style={{width:"90%" , paddingTop:"3%", paddingLeft:"13%"}}>
+                <ProductListPopular/>
+            </Row>
+            <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
                     <Link to={CATALOG_ROUTE}>
                     <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                         Смотреть каталог
@@ -177,13 +156,15 @@ const Base = observer(() => {
                 <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                     Админская часть
                 </button>
-            </Link></Row>
+                </Link>
+            </Row>
             <Row style={{ paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center">
                 <Link to={PERSONAL_ACCOUNT_ROUTE}>
                     <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                         ЛК видимый
                     </button>
-                </Link></Row>
+                </Link>
+            </Row>
         </Container>
     );
 });

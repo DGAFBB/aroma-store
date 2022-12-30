@@ -6,7 +6,7 @@ const AdminNavigate = () => {
     return (
         <Container>
             <Col className="justify-content-md-center">
-                    <text style={{fontWeight:"bold"}} className="heading2">Личные данные</text><p/>
+                    <text style={{fontWeight:"bold"}} className="reg-head">Личные данные</text><p/>
             </Col>
         </Container>
     );

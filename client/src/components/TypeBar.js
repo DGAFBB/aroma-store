@@ -9,7 +9,7 @@ const TypeBar = observer(() => {
     return (
         <Row style={{backgroundColor:"#5D4037", paddingTop:"2%", paddingBottom:"2%"}} className="justify-content-md-center">
             <Row style={{width:"50%", left:"25%"}} className="justify-content-center row-border">
-                <Col style={{left:"5%"}}>
+                <Col style={{width:"25%",left:"5%"}}>
                     <text className="heading2" >ghnbbcvdfyh</text>
                 </Col>
                 <Col >

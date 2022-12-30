@@ -10,7 +10,7 @@ const Basket = () => {
     return (
         <Container>
             <Row>
-                <text style={{marginTop:"4%", marginBottom:"7%", marginRight:"auto", marginLeft:0}} className="heading2">Оформление заказа</text>
+                <text style={{marginTop:"4%", marginBottom:"7%", marginRight:"auto", marginLeft:0}} className="reg-head">Оформление заказа</text>
             </Row>
             <Row>
                 <ProductListBasket/>

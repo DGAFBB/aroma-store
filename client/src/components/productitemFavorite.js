@@ -9,9 +9,9 @@ import auth from "../pages/auth";
 import "../styles/cards/card.css"
 
 const ProductItemFavorite = ({product}) => {
-    const navigate = useNavigate();
-    const rating = require('react-rating');
-    const path = `${product.id}.png`
+    // const navigate = useNavigate();
+    // const rating = require('react-rating');
+    // const path = `${product.id}.png`
     return (
         <Link to={PRODUCT_ROUTE} style={{ paddingBottom:"5%"}}>
             <card style={{width:"100%"}} className="justify-content-md-center flex-fill">
