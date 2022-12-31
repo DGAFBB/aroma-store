@@ -87,4 +87,24 @@
     /* identical to box height */
     color: #5D4037;
 }
-
+.log-form_price{
+    background: transparent;
+    width: 20%;
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-indent: 15px;
+    color: #370601;
+    border-bottom: 1px solid #5D4037;
+    padding-top: 5%;
+}
+.log-form::-webkit-input-placeholder {color:#370601;}
+.log-form::-moz-placeholder          {color:#370601;}/* Firefox 19+ */
+.log-form:-moz-placeholder           {color:#370601;}/* Firefox 18- */
+.log-form:-ms-input-placeholder      {color:#370601;}
+.log-form:focus::-webkit-input-placeholder {color: transparent}
+.log-form:focus::-moz-placeholder          {color: transparent}
+.log-form:focus:-moz-placeholder           {color: transparent}
+.log-form:focus:-ms-input-placeholder      {color: transparent}
