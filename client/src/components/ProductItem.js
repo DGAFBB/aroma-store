@@ -13,9 +13,11 @@ const ProductItem = ({product}) => {
             <card style={{width:"100%"}} className="justify-content-md-center flex-fill">
                 <Col className="justify-content-md-center" style={{ width:"80%", cursor: 'pointer' }}>
                     <Row>
+                        <div style={{width:"100%"}} className="card_style align-items-center">
                         <Image width="98%" height="98%" src={process.env.REACT_APP_API_URL + path} style={{paddingTop:"2%", paddingLeft:"2%"}}/>
                         <div>
                             <img width="10%" height="10%" src={heart} alt={heart} style={{position:"absolute", top:"3%",  right:"8%"}}/>
+                        </div>
                         </div>
                     </Row>
                     <Row>

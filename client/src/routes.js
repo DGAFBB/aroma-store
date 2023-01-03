@@ -30,7 +30,7 @@ import {
     ADMIN_GUESTS_PANEL_ROUTE,
     ORDER_ROUTE,
     ADMIN_ACCOUNT_REG_ROUTE,
-    PERSONAL_ACCOUNT_REG_ROUTE
+    PERSONAL_ACCOUNT_REG_ROUTE, PRODUCT1_ROUTE, ORDER1_ROUTE
 } from "./utils/consts";
 import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
@@ -59,9 +59,6 @@ export const authAdminRoutes = [
     },
 ]
 
-
-
-
 export const authGuestRoutes =[
     {
         path: GUEST_ROUTE + PERSONAL_ACCOUNT_ROUTE,
@@ -71,7 +68,14 @@ export const authGuestRoutes =[
         path: PERSONAL_ACCOUNT_REG_ROUTE,
         Component: Personal_account_reg
     },
-
+    {
+        path: FAVOR_ROUTE,
+        Component: Favor
+    },
+    {
+        path: ORDER_ROUTE,
+        Component: Order
+    },
 ]
 
 export const publicRoutes = [
@@ -83,10 +87,7 @@ export const publicRoutes = [
         path: PERSONAL_ACCOUNT_ROUTE,
         Component: Personal_account
     },
-    {
-        path: ORDER_ROUTE,
-        Component: Order
-    },
+
     {
         path: ABOUT_ROUTE,
         Component: Base
@@ -111,17 +112,16 @@ export const publicRoutes = [
         path: CATALOG_ROUTE,
         Component: Catalog
     },
+    // {
+    //     path:PRODUCT_ROUTE + '/:id',
+    //     Component: Product
+    // },
     {
-        path:PRODUCT_ROUTE + '/:id',
+        path:PRODUCT1_ROUTE,
         Component: Product
-    },
-    {
-        path: FAVOR_ROUTE,
-        Component: Favor
     },
     {
         path: CONTACTS_ROUTE,
         Component: Contacts
     },
-
 ]

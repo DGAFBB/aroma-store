@@ -18,3 +18,4 @@ export const ADMIN_CATALOG_ROUTE = "/admin_catalog"
 export const ADMIN_DELIVERIES_ROUTE = "/admin_deliveries"
 export const ADMIN_GUESTS_PANEL_ROUTE = "/admin_guests_panel"
 export const ORDER_ROUTE ="/order"
+export const PRODUCT1_ROUTE = '/product'

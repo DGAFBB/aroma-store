@@ -19,7 +19,13 @@ import * as PropTypes from "prop-types";
 import us_product from "../assets/us_product.svg"
 import ProductList from "../components/ProductList";
 import {Link} from "react-router-dom";
-import {ADMIN_ACCOUNT_ROUTE, ADMIN_CATALOG_ROUTE, CATALOG_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
+import {
+    ADMIN_ACCOUNT_ROUTE,
+    ADMIN_CATALOG_ROUTE,
+    CATALOG_ROUTE, ORDER1_ROUTE,
+    PERSONAL_ACCOUNT_ROUTE,
+    PRODUCT1_ROUTE
+} from "../utils/consts";
 import ProductItem from "../components/ProductItem";
 import search1 from "../assets/search.svg";
 import ProductListPopular from "../components/productlistPopular";
@@ -145,12 +151,26 @@ const Base = observer(() => {
             {/*    <ProductListPopular/>*/}
             {/*</Row>*/}
             <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
-                    <Link to={CATALOG_ROUTE}>
+                <Link to={CATALOG_ROUTE}>
                     <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                         Смотреть каталог
                     </button>
-                    </Link>
-                </Row>
+                </Link>
+            </Row>
+            <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
+                <Link to={PRODUCT1_ROUTE}>
+                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                        Product
+                    </button>
+                </Link>
+            </Row>
+            <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
+                <Link to={ORDER1_ROUTE}>
+                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                        Order
+                    </button>
+                </Link>
+            </Row>
         </Container>
     );
 });

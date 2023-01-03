@@ -1,21 +1,25 @@
 import React from 'react';
-import {Card, Col, Container} from "react-bootstrap";
+import {Card, Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {FAVOR_ROUTE, ORDER_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
 import Guest_NavBar from "../components/Guest_NavBar";
+import OrderList from "../components/OrderList";
 
 
-const Order = () => {
+const Order = ({order}) => {
     return (
         <Container>
-            <Col>
+            <Row>
+            <Col md={3} className="justify-content-md-center">
                 <Guest_NavBar></Guest_NavBar>
             </Col>
-            <Col>
-                <Card>
-
-                </Card>
+            <Col md={8}>
+                <Row>
+                    <text className="reg-head">Заказы {order.count}</text>
+                </Row>
+                <OrderList/>
             </Col>
+            </Row>
         </Container>
     );
 };
