@@ -26,7 +26,7 @@ const TableAdminGuests = ({guest}) => {
                         </div>
                     </th>
                     <th style={{paddingTop:"3%", paddingBottom:"2%"}}>{guest.id}</th>
-                    <th style={{paddingTop:"3%", paddingBottom:"2%"}}>{guest.name}</th>
+                    <th style={{paddingTop:"3%", paddingBottom:"2%"}}>{guest.name}{guest.second_name}</th>
                     <th style={{paddingTop:"3%", paddingBottom:"2%"}}>{guest.date}</th>
                     <th style={{paddingTop:"3%", paddingBottom:"2%"}}>{guest.tel}</th>
                     <th style={{paddingTop:"3%", paddingBottom:"2%"}}>{guest.type}</th>

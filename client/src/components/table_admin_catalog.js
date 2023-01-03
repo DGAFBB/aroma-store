@@ -40,7 +40,7 @@ const TableAdminCatalog = ({product}) => {
                     <img width={"45%"} src={process.env.REACT_APP_API_URL + path}/>
                 </th>
                 <th style={{width:"5%", paddingTop:"3%"}}>{product.article}</th>
-                <th style={{width:"20%", paddingTop:"3%"}}>{product.name}</th>
+                <th style={{width:"20%", paddingTop:"3%"}}>{product.title}</th>
                 <th style={{width:"20%", paddingTop:"3%"}}>{product.description}</th>
                 <th>{product.price}</th>
                 <th style={{width:"5%", paddingTop:"3%"}}>

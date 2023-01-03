@@ -40,13 +40,36 @@ import Order from "./pages/order";
 export const authAdminRoutes = [
     {
         path: ADMIN_ROUTE,
+        Component: Admin_account
+    },{
+        path: ADMIN_CATALOG_ROUTE,
+        Component: Admin_catalog
+    },
+    {
+        path: ADMIN_ACCOUNT_REG_ROUTE,
         Component: Admin_account_reg
     },
+    {
+        path: ADMIN_DELIVERIES_ROUTE,
+        Component: Admin_deliveries
+    },
+    {
+        path: ADMIN_GUESTS_PANEL_ROUTE,
+        Component: Admin_guests
+    },
 ]
+
+
+
+
 export const authGuestRoutes =[
     {
         path: GUEST_ROUTE + PERSONAL_ACCOUNT_ROUTE,
         Component: Personal_account
+    },
+    {
+        path: PERSONAL_ACCOUNT_REG_ROUTE,
+        Component: Personal_account_reg
     },
 
 ]
@@ -88,12 +111,8 @@ export const publicRoutes = [
         path: CATALOG_ROUTE,
         Component: Catalog
     },
-    // {
-    //     path:PRODUCT_ROUTE + '/:id',
-    //     Component: Product
-    // },
     {
-        path:PRODUCT_ROUTE ,
+        path:PRODUCT_ROUTE + '/:id',
         Component: Product
     },
     {
@@ -104,28 +123,5 @@ export const publicRoutes = [
         path: CONTACTS_ROUTE,
         Component: Contacts
     },
-    {
-        path: ADMIN_CATALOG_ROUTE,
-        Component: Admin_catalog
-    },
-    {
-        path: ADMIN_ACCOUNT_ROUTE,
-        Component: Admin_account
-    },
-    {
-        path: ADMIN_ACCOUNT_REG_ROUTE,
-        Component: Admin_account_reg
-    },
-    {
-        path: PERSONAL_ACCOUNT_REG_ROUTE,
-        Component: Personal_account_reg
-    },
-    {
-        path: ADMIN_DELIVERIES_ROUTE,
-        Component: Admin_deliveries
-    },
-    {
-        path: ADMIN_GUESTS_PANEL_ROUTE,
-        Component: Admin_guests
-    },
+
 ]

@@ -10,9 +10,9 @@ import "../styles/cards/card.css"
 import heart_active from "../assets/heart_active.svg"
 
 const ProductItemFavorite = ({product}) => {
-    // const navigate = useNavigate();
-    // const rating = require('react-rating');
-    // const path = `${product.id}.png`
+    const navigate = useNavigate();
+    const rating = require('react-rating');
+    const path = `${product.id}.png`
 
     return (
         <Link to={PRODUCT_ROUTE} style={{ paddingBottom:"5%"}}>
@@ -23,7 +23,7 @@ const ProductItemFavorite = ({product}) => {
                 >
                     <Row>
                         <div style={{width:"100%"}} className="card_style align-items-center">
-                            <Image width="98%" height="98%" src={product1} style={{paddingTop:"2%", paddingLeft:"2%"}}/>
+                            <Image width="98%" height="98%" src={process.env.REACT_APP_API_URL + path} style={{paddingTop:"2%", paddingLeft:"2%"}}/>
                             <div>
                                 <img width="10%" height="10%" src={heart} alt={heart} style={{position:"absolute", top:"3%",  right:"8%"}}/>
                                 <img width="10%" height="10%" src={heart_active} alt={heart_active} style={{position:"absolute", top:"3%",  right:"8%"}}/>
@@ -32,8 +32,8 @@ const ProductItemFavorite = ({product}) => {
                     </Row>
                     <Row style={{width:"100%"}}>
                         <Col style={{width:"100%"}}>
-                            <Row className="heading5" style={{paddingTop:"20%"}}>Yfbvtyjdfybt</Row>
-                            <Row className="heading5_2" style={{paddingTop:"5%"}}> Jgbcfybt njdfhf </Row>
+                            <Row className="heading5" style={{paddingTop:"20%"}}>{product.title}</Row>
+                            <Row className="heading5_2" style={{paddingTop:"5%"}}>{product.description}</Row>
                         </Col>
                     </Row>
                     <Row style={{paddingTop:"20%"}} >
