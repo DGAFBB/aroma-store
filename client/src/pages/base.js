@@ -164,13 +164,6 @@ const Base = observer(() => {
                     </button>
                 </Link>
             </Row>
-            <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
-                <Link to={ORDER1_ROUTE}>
-                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
-                        Order
-                    </button>
-                </Link>
-            </Row>
         </Container>
     );
 });
