@@ -112,12 +112,8 @@ export const publicRoutes = [
         path: CATALOG_ROUTE,
         Component: Catalog
     },
-    // {
-    //     path:PRODUCT_ROUTE + '/:id',
-    //     Component: Product
-    // },
     {
-        path:PRODUCT1_ROUTE,
+        path:PRODUCT_ROUTE + '/:id',
         Component: Product
     },
     {
