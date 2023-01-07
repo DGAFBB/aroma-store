@@ -54,6 +54,17 @@
     padding-bottom: 2%;
     padding-top: 2%;
 }
+.transparent-button_heart {
+    font-family: 'PT Astra Serif', serif;
+    font-color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #5D4037;
+    background: transparent;
+}
 .transparent-button2{
     font-family: 'PT Astra Serif', serif;
     font-color: #5D4037;

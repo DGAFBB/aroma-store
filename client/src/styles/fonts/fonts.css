@@ -76,6 +76,15 @@
     line-height: 25px;
     color: #5D4037;
 }
+.reg-head08{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: rgba(93, 64, 55, 0.8);
+}
 .reg-head2{
     font-family: 'PT Astra Serif';
     font-style: normal;
@@ -143,4 +152,26 @@
     /* шоколадный */
 
     color: #5D4037;
+}
+.price_font{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    /* identical to box height */
+
+
+    color: #5D4037;
+}
+.article_font{
+    font-family: 'PT Astra Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: rgba(93, 64, 55, 0.5);
 }
