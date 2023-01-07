@@ -33,7 +33,7 @@ const ProductItemFavorite = ({product}) => {
                     <Row style={{width:"100%"}}>
                         <Col style={{width:"100%"}}>
                             <Row className="heading5" style={{paddingTop:"20%"}}>{product.title}</Row>
-                            <Row className="heading5_2" style={{paddingTop:"5%"}}>{product.description}</Row>
+                            <Row className="heading5_2" style={{paddingTop:"5%"}}>{product.aroma}</Row>
                         </Col>
                     </Row>
                     <Row style={{paddingTop:"20%"}} >

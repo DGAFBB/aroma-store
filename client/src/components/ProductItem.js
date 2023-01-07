@@ -23,7 +23,7 @@ const ProductItem = ({product}) => {
                     <Row>
                         <Col md={9}>
                             <Row className="heading5" style={{paddingTop:"20%"}}>{product.title}</Row>
-                            <Row className="heading5_2" style={{paddingTop:"5%"}}> {product.description} </Row>
+                            <Row className="heading5_2" style={{paddingTop:"5%"}}> {product.aroma} </Row>
                             <Row className="heading5" style={{paddingTop:"10%"}}>{product.price}</Row>
                         </Col>
                     </Row>

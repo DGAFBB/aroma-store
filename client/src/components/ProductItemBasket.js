@@ -29,7 +29,7 @@ const ProductItemBasket = ({product}) => {
                             <Link to={PRODUCT_ROUTE}>
                             <Row className="reg-head" style={{paddingLeft:"15%"}}>{product.title}</Row>
                             </Link>
-                            <Row className="heading5_2" style={{paddingTop:"5%" , paddingLeft:"15%"}}>{product.description}</Row>
+                            <Row className="heading5_2" style={{paddingTop:"5%" , paddingLeft:"15%"}}>{product.aroma}</Row>
                         </Col>
 
                     <Col md={2}>
