@@ -147,20 +147,13 @@ const Base = observer(() => {
             <Row className="justify-content-md-center" style={{paddingTop:"3%"}}>
                     <text className="header-base0">Популярное</text>
                 </Row>
-            {/*<Row className="justify-content-md-center align-items-center" style={{width:"90%" , paddingTop:"3%", paddingLeft:"13%"}}>*/}
-            {/*    <ProductListPopular/>*/}
-            {/*</Row>*/}
+            <Row className="justify-content-md-center align-items-center" style={{width:"90%" , paddingTop:"3%", paddingLeft:"13%"}}>
+                <ProductListPopular/>
+            </Row>
             <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
                 <Link to={CATALOG_ROUTE}>
                     <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
                         Смотреть каталог
-                    </button>
-                </Link>
-            </Row>
-            <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
-                <Link to={PRODUCT1_ROUTE}>
-                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
-                        Product
                     </button>
                 </Link>
             </Row>

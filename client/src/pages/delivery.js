@@ -3,23 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Container, FormGroup} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
-import * as PropTypes from "prop-types";
 import "../styles/CheckBox/Ratio.css"
 
-function FormControlLabel(props) {
-    return null;
-}
-
-FormControlLabel.propTypes = {
-    control: PropTypes.element,
-    label: PropTypes.string
-};
-
-function Checkbox(props) {
-    return null;
-}
-
-Checkbox.propTypes = {defaultChecked: PropTypes.bool};
 const Delivery = observer( () => {
     return (
         <Container className="d-flex justify-content-center" style={{ minHeight: '60.5vh', paddingTop:"5%" }}>

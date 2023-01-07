@@ -31,7 +31,7 @@ const Catalog = () => {
                         <AromaBar/>
                     </Col>
                     <Col md={8}>
-                        <ProductListPopular/>
+                        <ProductList/>
                         <Pages/>
                     </Col>
                 </Row>

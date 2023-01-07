@@ -9,11 +9,11 @@ import {Link} from "react-router-dom";
 import {ADMIN_ACCOUNT_REG_ROUTE, BASE_ROUTE} from "../utils/consts";
 
 const AdminAccount = observer(() => {
-    // const [admin, setAdmin] = useState({info: []})
-    // const {id} = useParams()
-    // useEffect(() => {
-    //     fetchAdmin(id).then(data => setAdmin(data))
-    // }, [])
+    const [admin, setAdmin] = useState({info: []})
+    const {id} = useParams()
+    useEffect(() => {
+        fetchAdmin(id).then(data => setAdmin(data))
+    }, [])
 
     return (
         <Container fluid>
@@ -24,14 +24,14 @@ const AdminAccount = observer(() => {
                 </Col>
                 <Col md={5} className="justify-content-md-center">
                     <card>
-                        {/*<Row>*/}
-                        {/*    {admin.info.map((info, index) =>*/}
-                        {/*    <Row key={info.id} className="reg-head" style={{paddingBottom:"5%"}}>*/}
-                        {/*        {info.title}: {info.description}*/}
-                        {/*    </Row>*/}
-                        {/*    )}*/}
+                        <Row>
+                            {admin.info.map((info, index) =>
+                            <Row key={info.id} className="reg-head" style={{paddingBottom:"5%"}}>
+                                {info.title}: {info.description}
+                            </Row>
+                            )}
 
-                        {/*</Row>*/}
+                        </Row>
                         <div>
                             <Link to={ADMIN_ACCOUNT_REG_ROUTE}>
                             <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Изменить данные</button>

@@ -3,12 +3,10 @@ import {Col, Container, Row} from "react-bootstrap";
 import "../styles/NavBar/NavBar.css"
 import Guest_NavBar from "../components/Guest_NavBar";
 import "../styles/CheckBox/Ratio.css"
-import Admin_NavBar from "../components/Admin_NavBar";
-import Admin_Navigate from "../components/Admin_Navigate";
 import {Link} from "react-router-dom";
 import {ADMIN_ACCOUNT_REG_ROUTE, BASE_ROUTE, PERSONAL_ACCOUNT_REG_ROUTE} from "../utils/consts";
 
-const PersonalAccount = () => {
+const PersonalAccount = ({guest}) => {
     return (
 
         <Container>
@@ -18,14 +16,14 @@ const PersonalAccount = () => {
             </Col>
             <Col md={5} className="justify-content-md-center">
                 <card style={{ width: "30%"}}>
-                    {/*<Row>*/}
-                    {/*    {guest.info.map((info, index) =>*/}
-                    {/*    <Row key={info.id} className="reg-head" style={{paddingBottom:"5%"}}>*/}
-                    {/*        {info.title}: {info.description}*/}
-                    {/*    </Row>*/}
-                    {/*    )}*/}
+                    <Row>
+                        {guest.info.map((info, index) =>
+                        <Row key={info.id} className="reg-head" style={{paddingBottom:"5%"}}>
+                            {info.title}: {info.description}
+                        </Row>
+                        )}
 
-                    {/*</Row>*/}
+                    </Row>
                     <Link to={PERSONAL_ACCOUNT_REG_ROUTE}>
                         <button className="brown-button" style={{width:"45%", marginTop:"17%"}}>Изменит данные</button>
                     </Link>

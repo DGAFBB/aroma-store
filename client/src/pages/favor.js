@@ -1,7 +1,5 @@
 import React from 'react';
 import {Card, Col, Container, Row} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import {FAVOR_ROUTE, ORDER_ROUTE, PERSONAL_ACCOUNT_ROUTE} from "../utils/consts";
 import Guest_NavBar from "../components/Guest_NavBar";
 import ProductListPopular from "../components/productlistPopular";
 import ProductListFavorit from "../components/ProductListFavorit";
