@@ -1,15 +1,41 @@
 .brown-button{
-    font-family: 'PT Astra Serif', serif !important;
-    color: #E8E0DA !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: 21px !important;
+    font-family: 'PT Astra Serif', serif;
+    color: #E8E0DA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     background: #5D4037;
     border: 1px solid #5D4037;
+    border-radius: 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.brown-button:hover{
+    font-family: 'PT Astra Serif', serif;
+    color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: transparent;
+    border: 1px solid #5D4037;
+    border-radius: 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.brown-button:active, focus{
+    font-family: 'PT Astra Serif', serif;
+    color: #EDE6E1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: #370601;
+    border: 1px solid #370601;
     border-radius: 0px ;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .milk-button{
     font-family: 'PT Astra Serif', serif;
@@ -18,13 +44,37 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     border: 1px solid #EDE6E1;
     background: #E8E0DA;
     margin-left: 1%;
     padding-top: 2%;
     padding-bottom: 2%;
-
+}
+.milk-button:hover{
+    font-family: 'PT Astra Serif', serif;
+    color:#EDE6E1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #370601;
+    background: #370601;
+    margin-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.milk-button:active, focus{
+    font-family: 'PT Astra Serif', serif;
+    color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #370601;
+    background: #E8E0DA;
+    margin-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .milk-button_img{
     position: relative;
@@ -54,6 +104,34 @@
     padding-bottom: 2%;
     padding-top: 2%;
 }
+.transparent-button:hover{
+    font-family: 'PT Astra Serif', serif;
+    color: #E8E0DA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #5D4037;
+    background: #5D4037;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.transparent-button:active, focus{
+    font-family: 'PT Astra Serif', serif;
+    color: #370601;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #370601;
+    background: transparent;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
 .transparent-button_heart {
     font-family: 'PT Astra Serif', serif;
     font-color: #5D4037;
@@ -75,6 +153,34 @@
     /* identical to box height */
     border: 1px solid transparent;
     background: transparent;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.transparent-button2:hover{
+    font-family: 'PT Astra Serif', serif;
+    color: #E8E0DA;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #5D4037;
+    background: #5D4037;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.transparent-button2:active, focus{
+    font-family: 'PT Astra Serif', serif;
+    color: #5D4037;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    border: 1px solid #370601;
+    background: #E8E0DA;
     margin-left: 1%;
     padding-bottom: 2%;
     padding-top: 2%;

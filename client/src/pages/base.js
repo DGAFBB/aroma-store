@@ -93,7 +93,9 @@ const Base = observer(() => {
                         </p>
                     </text>
                     <Row className="justify-content-md-center align-items-center" style={{paddingTop:"8%", paddingBottom:"20%"}}>
-                    <Link to={CATALOG_ROUTE} style={{paddingRight:"23%"}}><button className="brown-button" style={{width:"146%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>Смотреть каталог</button></Link>
+                    <Link to={CATALOG_ROUTE} style={{paddingRight:"23%"}}>
+                        <button className="brown-button" style={{width:"146%", paddingTop:"8px", paddingBottom:"8px"}}>Смотреть каталог</button>
+                    </Link>
                     </Row>
                 </Col>
                 <Col className="col_c justify-content-md-center align-items-center">
@@ -152,7 +154,7 @@ const Base = observer(() => {
             </Row>
             <Row style={{paddingTop:"2%", paddingBottom:"5%", paddingRight:"5%"}} className="justify-content-md-center align-items-center" >
                 <Link to={CATALOG_ROUTE}>
-                    <button className="brown-button" style={{width:"140%", color: "#E8E0DA", paddingTop:"5px", paddingBottom:"5px"}}>
+                    <button className="brown-button" style={{width:"140%", paddingTop:"8px", paddingBottom:"8px"}}>
                         Смотреть каталог
                     </button>
                 </Link>
