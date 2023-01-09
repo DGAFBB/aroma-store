@@ -30,12 +30,13 @@ import {
     ADMIN_GUESTS_PANEL_ROUTE,
     ORDER_ROUTE,
     ADMIN_ACCOUNT_REG_ROUTE,
-    PERSONAL_ACCOUNT_REG_ROUTE, PRODUCT1_ROUTE, ORDER1_ROUTE
+    PERSONAL_ACCOUNT_REG_ROUTE
 } from "./utils/consts";
 import Favor from "./pages/favor";
 import Personal_account from "./pages/personal_account";
 import Contacts from "./pages/contacts";
 import Order from "./pages/order";
+import Registration from "./pages/registration";
 
 export const authAdminRoutes = [
     {
@@ -83,12 +84,7 @@ export const publicRoutes = [
         path: BASE_ROUTE,
         Component: Base
     },
-    {
-        path: PERSONAL_ACCOUNT_ROUTE,
-        Component: Personal_account
-    },
-
-    {
+       {
         path: ABOUT_ROUTE,
         Component: Base
     },
@@ -106,7 +102,7 @@ export const publicRoutes = [
     },
     {
         path: REGISTRATION_ROUTE,
-        Component: Auth
+        Component: Registration
     },
     {
         path: CATALOG_ROUTE,

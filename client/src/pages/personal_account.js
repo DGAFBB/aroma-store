@@ -4,7 +4,7 @@ import "../styles/NavBar/NavBar.css"
 import Guest_NavBar from "../components/Guest_NavBar";
 import "../styles/CheckBox/Ratio.css"
 import {Link} from "react-router-dom";
-import {ADMIN_ACCOUNT_REG_ROUTE, BASE_ROUTE, PERSONAL_ACCOUNT_REG_ROUTE} from "../utils/consts";
+import { BASE_ROUTE, PERSONAL_ACCOUNT_REG_ROUTE} from "../utils/consts";
 
 const PersonalAccount = ({guest}) => {
     return (

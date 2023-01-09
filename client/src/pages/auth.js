@@ -34,7 +34,7 @@ const Auth = observer(() => {
                 data = await AdminLogin(login, password)
             } else if (isLogin && location.pathname === GUEST_ROUTE + LOGIN_ROUTE) {
                 data = await GuestLogin(email)
-            } else if (!isLogin && location.pathname === ADMIN_ROUTE + REGISTRATION_ROUTE) {
+            } else if (!isLogin && location.pathname === GUEST_ROUTE + REGISTRATION_ROUTE) {
                 data = await GuestRegistration(login, password)
             }
             user.setUser(data)
@@ -56,66 +56,27 @@ const Auth = observer(() => {
     return (
         <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '65.5vh' }}>
             <card style={{ width: 600, backgroundColor: "#EDE6E1"}} className="p-5">
-                <h2 className="reg-head" >{isLogin ? 'Авторизация' : 'Регистрация'}</h2>
-                {location.pathname === ADMIN_ROUTE + REGISTRATION_ROUTE || location.pathname === ADMIN_ROUTE + LOGIN_ROUTE ? (
                     <Form className="d-flex flex-column">
-                        <input type="email" className="log-form"  placeholder="E-mail" style={{marginTop:"2%"}}>
-                        </input>
-                        <label className="form-check-label">
-                            <input className="form-check-input check-form" type="checkbox"> Подписаться на новости и скидки</input>
-                        </label>
-                        <input className="log-form" type="tel"  placeholder="Контактный телефон" style={{marginTop:"2%"}}>
-                        </input>
-                        <input className="log-form" type="password"  placeholder="Придумайте пароль" style={{marginTop:"2%"}}>
-                        </input>
-                        <input className="log-form" type="password"  placeholder="Повторите пароль" style={{marginTop:"2%"}}>
-                        </input>
-                        <input className="log-form" type="text"   placeholder="Введите свое имя" style={{marginTop:"2%"}}>
-                    </input>
-                        <input className="log-form" type="text"   placeholder="Введите свою фамилию"style={{marginTop:"2%"}}>
-                        </input>
-                        <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
-                            <button className="brown-button" onClick={click} style={{width:"40%", marginTop:"7%"}}>
-                                {isLogin ? 'Войти' : 'Регистрация'}
-                            </button>
-                            {isLogin ? (
-                                <div className="heading3">
-                                    Нет профиля?{' '}
-                                    <Link
-                                        className="heading3"
-                                        style={{ cursor: 'pointer' }}
-                                        onClick={() => navigate(ADMIN_ROUTE + REGISTRATION_ROUTE)}
-                                    >
-                                        Зарегистрироваться
-                                    </Link>
-                                </div>
-                            ) : (
-                                <div className="heading3">
-                                    Есть профиль?{' '}
-                                    <div
-                                        className="heading3"
-                                        style={{ cursor: 'pointer' }}
-                                        onClick={() => navigate(ADMIN_ROUTE + LOGIN_ROUTE)}
-                                    >
-                                        Войти
-                                    </div>
-                                </div>
-                            )}
-                        </Row>
-                    </Form>
-                ) : (
-                    <Form className="d-flex flex-column">
+                        <h2 className="reg-head" >Авторизация</h2>
                             <input className="log-form" type="tel"  placeholder="Номер телефона" style={{marginTop:"2%"}}>
                             </input>
                         <input className="log-form" type="password"  placeholder="Пароль" style={{marginTop:"2%"}}>
                         </input>
                         <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
                             <button className="brown-button" onClick={click} style={{width:"40%", marginTop:"7%"}}>
-                                {isLogin ? 'Войти' : null}
+                                Войти
                             </button>
                         </Row>
+                        <div className="heading3" style={{paddingTop:"10%"}}>
+                        Нет профиля?   {' '}
+                        <Link to={REGISTRATION_ROUTE}
+                            className="heading3"
+                            style={{ cursor: 'pointer'}}
+                        >
+                            Зарегистрироваться
+                        </Link>
+                    </div>
                     </Form>
-                )}
             </card>
         </Container>
     )
