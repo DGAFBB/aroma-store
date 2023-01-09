@@ -34,8 +34,6 @@ const Auth = observer(() => {
                 data = await AdminLogin(login, password)
             } else if (isLogin && location.pathname === GUEST_ROUTE + LOGIN_ROUTE) {
                 data = await GuestLogin(email)
-            } else if (!isLogin && location.pathname === GUEST_ROUTE + REGISTRATION_ROUTE) {
-                data = await GuestRegistration(login, password)
             }
             user.setUser(data)
             user.setIsAuth(true)
@@ -68,7 +66,7 @@ const Auth = observer(() => {
                             </button>
                         </Row>
                         <div className="heading3" style={{paddingTop:"10%"}}>
-                        Нет профиля?   {' '}
+                        Нет профиля?
                         <Link to={REGISTRATION_ROUTE}
                             className="heading3"
                             style={{ cursor: 'pointer'}}

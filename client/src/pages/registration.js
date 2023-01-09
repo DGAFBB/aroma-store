@@ -30,29 +30,16 @@ const Registration = observer(() => {
         const click = async () => {
             try {
                 let data
-                if (isLogin && location.pathname === ADMIN_ROUTE + LOGIN_ROUTE) {
-                    data = await AdminLogin(login, password)
-                } else if (isLogin && location.pathname === GUEST_ROUTE + LOGIN_ROUTE) {
-                    data = await GuestLogin(email)
-                } else if (!isLogin && location.pathname === GUEST_ROUTE + REGISTRATION_ROUTE) {
+                if (!isLogin && location.pathname === GUEST_ROUTE + REGISTRATION_ROUTE) {
                     data = await GuestRegistration(login, password)
                 }
                 user.setUser(data)
                 user.setIsAuth(true)
                 user.setRole(data.role)
-                if (location.pathname === GUEST_ROUTE + LOGIN_ROUTE) {
-                    navigate(GUEST_ROUTE + PERSONAL_ACCOUNT_ROUTE)
-                } else if (
-                    location.pathname === ADMIN_ROUTE + LOGIN_ROUTE ||
-                    location.pathname === ADMIN_ROUTE + REGISTRATION_ROUTE
-                ) {
-                    navigate(ADMIN_ROUTE + ADMIN_ACCOUNT_ROUTE)
-                }
             } catch (e) {
                 alert(e.response.data.message)
             }
         }
-
             return (
                 <Container className="d-flex justify-content-center align-items-center" style={{minHeight: '65.5vh'}}>
                     <card style={{width: 600, backgroundColor: "#EDE6E1"}} className="p-5">
@@ -84,8 +71,8 @@ const Registration = observer(() => {
                                     Регистрация
                                 </button>
                             </Row>
-                            <div className="heading3">
-                            Есть профиль?{' '}
+                            <div className="heading3" style={{paddingTop:"10%"}}>
+                            Есть профиль?
                             <Link to={LOGIN_ROUTE}
                                   className="heading3"
                                   style={{cursor: 'pointer'}}

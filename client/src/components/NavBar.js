@@ -51,11 +51,6 @@ const NavBar = observer(() => {
                     {user.isAuth ?
                         <Nav style={{color: '#370601'}} className="navbar-light navbar-brand navbar-mar">
                             <NavLink
-                        onClick={() => navigate(ADMIN_ROUTE)}
-                             to={ADMIN_ROUTE} activeClassName='active'>
-                        Администратор
-                            </NavLink>
-                            <NavLink
                         onClick={() => logOut()}
                              to={BASE_ROUTE} activeClassName='active'>
                         Выйти
