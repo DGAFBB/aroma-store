@@ -2,11 +2,10 @@ import React, {useContext, useState} from 'react';
 import { Container, Form} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import {observer} from "mobx-react-lite";
-import {Link, NavLink, useLocation, useNavigate} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import {
     ADMIN_ACCOUNT_ROUTE,
     ADMIN_ROUTE,
-    BASE_ROUTE,
     GUEST_ROUTE,
     LOGIN_ROUTE, PERSONAL_ACCOUNT_ROUTE,
     REGISTRATION_ROUTE

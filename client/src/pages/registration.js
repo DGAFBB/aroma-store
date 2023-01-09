@@ -47,12 +47,11 @@ const Registration = observer(() => {
                         <Form className="d-flex flex-column">
                             <input type="email" className="log-form" placeholder="E-mail" style={{marginTop: "2%"}}>
                             </input>
-                            <label className="form-check-label">
-                                <input className="form-check-input check-form" type="checkbox"> Подписаться на новости и
-                                    скидки</input>
-                            </label>
-                            <input className="log-form" type="tel" placeholder="Контактный телефон"
-                                   style={{marginTop: "2%"}}>
+                            <div style={{paddingTop:"5%", marginLeft:"3%"}}>
+                                <input className="check_box" type="checkbox"/>
+                                <label className="heading3">Подписаться на новости и скидки</label>
+                            </div>
+                            <input className="log-form" type="tel" placeholder="Контактный телефон">
                             </input>
                             <input className="log-form" type="password" placeholder="Придумайте пароль"
                                    style={{marginTop: "2%"}}>

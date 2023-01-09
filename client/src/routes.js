@@ -37,6 +37,7 @@ import Personal_account from "./pages/personal_account";
 import Contacts from "./pages/contacts";
 import Order from "./pages/order";
 import Registration from "./pages/registration";
+import About from "./pages/base"
 
 export const authAdminRoutes = [
     {
@@ -86,7 +87,7 @@ export const publicRoutes = [
     },
        {
         path: ABOUT_ROUTE,
-        Component: Base
+        Component: About
     },
     {
         path: BASKET_ROUTE,
